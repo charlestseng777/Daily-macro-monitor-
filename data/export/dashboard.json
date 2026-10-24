@@ -1,9 +1,9 @@
 {
  "meta": {
   "as_of": "2026-10-23",
-  "generated_at": "2026-10-24T20:55:57+00:00",
+  "generated_at": "2026-10-24T21:09:46+00:00",
   "mode": "live",
-  "build_ms": 10764,
+  "build_ms": 12502,
   "llm": {
    "used": false,
    "reason": "no ANTHROPIC_API_KEY"
@@ -70,10 +70,18 @@
    "UK_CREDIT": "yahoo:SLXX.L"
   },
   "failed_sources": {
-   "DE10YBE": [],
-   "JP10YBE": [],
-   "JP_CREDIT": [],
-   "CN_CREDIT": []
+   "DE10YBE": [
+    "refinitiv:DEBEI10Y=RR: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Invalid username or password.\" } "
+   ],
+   "JP10YBE": [
+    "refinitiv:JPYCPI10Y=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Invalid username or password.\" } "
+   ],
+   "JP_CREDIT": [
+    "refinitiv:ITRAXX-JAPAN=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Invalid username or password.\" } "
+   ],
+   "CN_CREDIT": [
+    "refinitiv:ITRAXX-ASIAXJ=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Invalid username or password.\" } "
+   ]
   },
   "stale": [
    "BOJ_RATE"

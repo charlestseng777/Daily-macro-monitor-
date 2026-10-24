@@ -35,11 +35,11 @@ OK    UK30Y        cnbc:GB30Y-GB                                    517 rows, la
 FAIL  UK30Y        stooq:30uky.b                                  Stooq 30uky.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE2Y         refinitiv:DE2YT=RR                                 Refinitiv not configured
 OK    DE2Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A   2998 rows, last 2026-10-23 = 3.0200
-OK    DE2Y         cnbc:DE2Y-DE                                     519 rows, last 2026-10-23 = 3.0267
+OK    DE2Y         cnbc:DE2Y-DE                                     520 rows, last 2026-10-23 = 3.0267
 FAIL  DE2Y         stooq:2dey.b                                   Stooq 2dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE5Y         refinitiv:DE5YT=RR                                 Refinitiv not configured
 OK    DE5Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A   2998 rows, last 2026-10-23 = 3.1200
-OK    DE5Y         cnbc:DE5Y-DE                                     519 rows, last 2026-10-23 = 3.1389
+OK    DE5Y         cnbc:DE5Y-DE                                     518 rows, last 2026-10-23 = 3.1389
 FAIL  DE5Y         stooq:5dey.b                                   Stooq 5dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE10Y        refinitiv:DE10YT=RR                                Refinitiv not configured
 OK    DE10Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A   2998 rows, last 2026-10-23 = 3.3900
@@ -55,7 +55,7 @@ OK    JP2Y         cnbc:JP2Y-JP                                     494 rows, la
 FAIL  JP2Y         stooq:2jpy.b                                   Stooq 2jpy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP10Y        refinitiv:JP10YT=RR                                Refinitiv not configured
 OK    JP10Y        mof:10Y                                        2883 rows, last 2026-10-22 = 2.9140
-OK    JP10Y        cnbc:JP10Y-JP                                    494 rows, last 2026-10-23 = 2.7820
+OK    JP10Y        cnbc:JP10Y-JP                                    493 rows, last 2026-10-23 = 2.7820
 FAIL  JP10Y        stooq:10jpy.b                                  Stooq 10jpy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP30Y        refinitiv:JP30YT=RR                                Refinitiv not configured
 OK    JP30Y        mof:30Y                                        2883 rows, last 2026-10-22 = 3.9520
