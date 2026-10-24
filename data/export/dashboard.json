@@ -1,9 +1,9 @@
 {
  "meta": {
   "as_of": "2026-10-23",
-  "generated_at": "2026-10-24T19:45:08+00:00",
+  "generated_at": "2026-10-24T20:28:43+00:00",
   "mode": "live",
-  "build_ms": 21590,
+  "build_ms": 10270,
   "llm": {
    "used": false,
    "reason": "no ANTHROPIC_API_KEY"
@@ -70,18 +70,10 @@
    "UK_CREDIT": "yahoo:SLXX.L"
   },
   "failed_sources": {
-   "DE10YBE": [
-    "refinitiv:DEBEI10Y=RR: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Session quota is reached.\" } "
-   ],
-   "JP10YBE": [
-    "refinitiv:JPYCPI10Y=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Session quota is reached.\" } "
-   ],
-   "JP_CREDIT": [
-    "refinitiv:ITRAXX-JAPAN=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Session quota is reached.\" } "
-   ],
-   "CN_CREDIT": [
-    "refinitiv:ITRAXX-ASIAXJ=: Refinitiv login failed earlier this run: https://api.refinitiv.com/auth/oauth2/v1/token -> HTTP 400: {\"error\":\"access_denied\"  ,\"error_description\":\"Session quota is reached.\" } "
-   ]
+   "DE10YBE": [],
+   "JP10YBE": [],
+   "JP_CREDIT": [],
+   "CN_CREDIT": []
   },
   "stale": [
    "BOJ_RATE"
@@ -3750,8 +3742,8 @@
     79.16,
     78.0,
     79.65,
-    80.86,
-    81.86,
+    80.36,
+    81.36,
     74.69,
     81.8,
     87.94,
@@ -3920,8 +3912,8 @@
     39.1,
     37.28,
     38.2,
-    39.24,
-    40.24,
+    39.18,
+    40.18,
     34.53,
     41.91,
     48.03,
@@ -6950,7 +6942,7 @@
       4.1116,
       4.11,
       4.1165,
-      4.1186,
+      4.1136,
       4.0569,
       4.078,
       4.0994,
@@ -7126,7 +7118,7 @@
       3.711,
       3.7028,
       3.702,
-      3.7024,
+      3.7018,
       3.6553,
       3.6791,
       3.7003,
