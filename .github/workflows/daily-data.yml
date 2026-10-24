@@ -41,6 +41,10 @@ jobs:
 
       - uses: actions/checkout@v4
         if: steps.gate.outputs.run == 'true'
+        with:
+          # The branch tip, not the triggering commit, so a run that starts
+          # right after another run's data commit builds on it.
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v5
         if: steps.gate.outputs.run == 'true'
@@ -97,7 +101,13 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           AS_OF=$(python -c "import json;print(json.load(open('data/export/dashboard.json'))['meta']['as_of'])")
           git commit -m "macro data: refresh through ${AS_OF}"
-          for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
+          # If another run committed data meanwhile, keep this run's (newer) files.
+          for i in 1 2 3; do
+            if git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "::error::could not push the data commit"; exit 1
 
       # Publish the website: every number and chart series is exported as a
       # file, so GitHub Pages can host it without a running server.
