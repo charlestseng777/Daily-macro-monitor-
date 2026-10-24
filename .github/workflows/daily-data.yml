@@ -11,7 +11,7 @@ on:
     - cron: '30 5 * * 1-5'   # 05:30 GMT
   push:
     branches: ['main']
-    paths: ['backend/**', 'config/**', '.github/workflows/daily-data.yml']
+    paths: ['backend/**', 'config/**', 'web/**', '.github/workflows/daily-data.yml']
   workflow_dispatch:
 
 concurrency:
@@ -90,3 +90,32 @@ jobs:
           AS_OF=$(python -c "import json;print(json.load(open('data/export/dashboard.json'))['meta']['as_of'])")
           git commit -m "macro data: refresh through ${AS_OF}"
           for i in 1 2 3; do git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
+
+      # Publish the website: every number and chart series is exported as a
+      # file, so GitHub Pages can host it without a running server.
+      - name: Export site data
+        if: steps.gate.outputs.run == 'true'
+        working-directory: backend
+        run: python -m macrodash export-static --out ../web/public/data
+
+      - uses: actions/setup-node@v4
+        if: steps.gate.outputs.run == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Build site
+        if: steps.gate.outputs.run == 'true'
+        env:
+          VITE_STATIC: '1'
+        run: |
+          npm --prefix web ci
+          npm --prefix web run build
+
+      - name: Deploy to GitHub Pages
+        if: steps.gate.outputs.run == 'true'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./web/dist

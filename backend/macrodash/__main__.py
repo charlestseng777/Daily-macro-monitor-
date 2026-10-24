@@ -6,6 +6,7 @@ Command line:
   python -m macrodash scheduler [--now]             daily 05:30 UK refresh loop
   python -m macrodash sources [ID ...]              probe each instrument's sources
   python -m macrodash export [--out DIR]            write history CSVs + latest snapshot JSON
+  python -m macrodash export-static [--out DIR]     snapshot + chart series as files for a static site
   python -m macrodash import [--dir DIR]            load exported history CSVs into the database
 """
 
@@ -36,6 +37,8 @@ def main(argv: list[str] | None = None) -> int:
     so.add_argument("ids", nargs="*")
     ex = sub.add_parser("export")
     ex.add_argument("--out", default=str(DATA_DIR / "export"))
+    st = sub.add_parser("export-static")
+    st.add_argument("--out", default=str(DATA_DIR.parent / "web" / "public" / "data"))
     im = sub.add_parser("import")
     im.add_argument("--dir", default=str(DATA_DIR / "export"))
     args = p.parse_args(argv)
@@ -77,6 +80,10 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "export":
         from .exporter import export
         export(Path(args.out))
+        return 0
+    if args.cmd == "export-static":
+        from .exporter import export_static
+        print(f"exported {export_static(Path(args.out))} series")
         return 0
     if args.cmd == "import":
         from .exporter import import_history

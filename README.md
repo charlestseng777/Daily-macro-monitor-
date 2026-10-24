@@ -105,6 +105,15 @@ python -m macrodash export                      # write data/export (history CSV
 python -m pytest -q                             # from backend/
 ```
 
+### The website
+
+Each daily run also publishes the dashboard to GitHub Pages:
+**https://charlestseng777.github.io/Daily-macro-monitor-/**
+(`python -m macrodash export-static` writes the snapshot and every chart
+series as files; the site is built with `VITE_STATIC=1`). On the hosted page,
+flashcards show the day's five cards; spaced-repetition scheduling needs the
+backend (`python -m macrodash serve`).
+
 ### Daily refresh
 
 Two supported ways:

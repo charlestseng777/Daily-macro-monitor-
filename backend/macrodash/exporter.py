@@ -47,3 +47,28 @@ def import_history(directory: Path, repo: Repository | None = None) -> int:
         s = pd.Series(frame["value"].values, index=pd.to_datetime(frame["date"]))
         total += repo.upsert_series(path.stem, s, str(frame["source"].iloc[-1]))
     return total
+
+
+def export_static(out: Path, repo: Repository | None = None) -> int:
+    """Everything the web app reads, as files, for hosting without a server
+    (GitHub Pages): the latest snapshot and one file per chart series."""
+    from . import seriesdata
+
+    repo = repo or Repository()
+    snap = repo.latest_snapshot()
+    if not snap:
+        raise RuntimeError("no snapshot to export; run the pipeline first")
+    series_dir = out / "series"
+    series_dir.mkdir(parents=True, exist_ok=True)
+    (out / "dashboard.json").write_text(json.dumps(snap, separators=(",", ":"), default=str))
+    n = 0
+    for sid in seriesdata.all_ids(repo):
+        got = seriesdata.load(repo, sid)
+        if got is None or got[0].empty:
+            continue
+        full, kind, label, unit = got
+        body = seriesdata.static_payload(sid, full, kind, label, unit)
+        (series_dir / f"{sid}.json").write_text(json.dumps(body, separators=(",", ":")))
+        n += 1
+    log.info("static site data: %d series in %s", n, out)
+    return n

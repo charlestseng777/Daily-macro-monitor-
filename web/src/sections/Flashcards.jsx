@@ -45,6 +45,7 @@ export default function Flashcards({ fallback }) {
         )}
         {card && (
           <div>
+            {card.offline && <p className="mb-3 text-xs text-ink-3">Today's five cards. Spaced-repetition scheduling runs when the dashboard is served by its backend.</p>}
             <div className="flex items-center justify-between text-xs text-ink-3">
               <span className="uppercase tracking-wider">{card.topic}</span>
               <span className="num">{i + 1} / {cards.length}</span>

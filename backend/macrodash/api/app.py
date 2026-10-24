@@ -18,7 +18,6 @@ import threading
 import time
 from pathlib import Path
 
-import pandas as pd
 from fastapi import BackgroundTasks, FastAPI, Header, HTTPException, Query, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
@@ -27,9 +26,7 @@ from pydantic import BaseModel, Field
 
 from .. import instruments as reg
 from .. import srs
-from ..analytics.curves import CURVES
-from ..analytics.series import compute_stats, difference_bp, move, slice_range
-from ..analytics.spreads import FORWARDS, SPREADS, forward_rate
+from .. import seriesdata
 from ..config import MACRO_ROOT, get_settings
 from ..db import Repository
 from ..logging_setup import configure
@@ -48,7 +45,7 @@ _repo: Repository | None = None
 _cache: dict = {"at": 0.0, "payload": None, "etag": None}
 _lock = threading.Lock()
 
-RANGES = ["1W", "1M", "3M", "6M", "YTD", "1Y", "5Y", "MAX"]
+RANGES = seriesdata.RANGES
 
 
 def repo() -> Repository:
@@ -91,50 +88,14 @@ def dashboard(request: Request, response: Response):
     return payload
 
 
-def _derived_series(sid: str) -> tuple[pd.Series, str, str] | None:
-    """Return (series, kind, label) for a curve, spread, forward or pricing id."""
-    r = repo()
-    for c in CURVES:
-        if c.id == sid:
-            return difference_bp(r.load_series(c.back), r.load_series(c.front)), "bp", f"{c.region} {c.label}"
-    for d in SPREADS:
-        if d.id == sid:
-            return difference_bp(r.load_series(d.a), r.load_series(d.b)), "bp", d.label
-    for fid, label, a, ta, b, tb in FORWARDS:
-        if fid == sid:
-            frame = pd.concat([r.load_series(a), r.load_series(b)], axis=1).ffill(limit=3).dropna()
-            s = frame.apply(lambda row: forward_rate(row.iloc[0], ta, row.iloc[1], tb), axis=1)
-            return s, "yield", label
-    if sid.startswith("PRICING_"):
-        return r.load_series(sid), "bp", sid.replace("PRICING_", "").replace("_12M", " priced over 12M")
-    return None
-
-
 def _series_payload(sid: str, rng: str) -> dict:
-    registry = reg.registry()
-    if sid in registry:
-        inst = registry[sid]
-        full, kind, label, unit = repo().load_series(sid), inst.kind, inst.name, inst.level_unit
-    else:
-        got = _derived_series(sid)
-        if got is None:
-            raise HTTPException(404, f"unknown series {sid}")
-        full, kind, label = got
-        unit = "bp" if kind == "bp" else "%"
+    got = seriesdata.load(repo(), sid)
+    if got is None:
+        raise HTTPException(404, f"unknown series {sid}")
+    full, kind, label, unit = got
     if full.empty:
         raise HTTPException(404, f"no data for {sid}")
-    window = slice_range(full, rng)
-    st = compute_stats(full, kind)
-    change = move(float(window.iloc[-1]), float(window.iloc[0]), kind) if len(window) > 1 else None
-    move_unit = "bp" if kind in ("yield", "rate", "spread", "bp") else "%" if kind in ("price", "fx") else "pts"
-    return {
-        "id": sid, "label": label, "kind": kind, "unit": unit, "move_unit": move_unit, "range": rng,
-        "points": [{"t": ts.strftime("%Y-%m-%d"), "v": round(float(v), 4)} for ts, v in window.items()],
-        "range_stats": {"change": None if change is None else round(change, 2), "high": round(float(window.max()), 4),
-                        "low": round(float(window.min()), 4), "start": window.index[0].strftime("%Y-%m-%d"),
-                        "end": window.index[-1].strftime("%Y-%m-%d"), "n": int(len(window))},
-        "stats": st.as_dict() if st else None,
-    }
+    return seriesdata.payload(sid, full, kind, label, unit, rng)
 
 
 @app.get("/api/series/{sid}")
