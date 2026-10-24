@@ -1,0 +1,59 @@
+{
+  "_comment": [
+    "Central bank policy pricing config. Meeting dates are decision days.",
+    "Dates marked provisional are the banks' published or expected calendars and MUST be checked each year against the official pages listed in 'calendar_url'.",
+    "ois.refinitiv lists OIS tenor RICs (months -> RIC) used when Refinitiv credentials exist. Without them each bank falls back to the method listed in ois.fallback."
+  ],
+  "banks": [
+    {
+      "id": "FED", "name": "Federal Reserve", "short": "Fed", "region": "US", "currency": "USD",
+      "policy_rate": "FED_UPPER", "overnight": "SOFR", "step_bp": 25,
+      "calendar_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "meetings": ["2026-01-28", "2026-03-18", "2026-04-29", "2026-06-17", "2026-07-29", "2026-09-16", "2026-10-28", "2026-12-09",
+                   "2027-01-27", "2027-03-17", "2027-04-28", "2027-06-09", "2027-07-28", "2027-09-22", "2027-10-27", "2027-12-08"],
+      "provisional_from": "2027-01-01",
+      "ois": {
+        "refinitiv": {"1": "USDSROIS1M=", "3": "USDSROIS3M=", "6": "USDSROIS6M=", "9": "USDSROIS9M=", "12": "USDSROIS1Y=", "18": "USDSROIS18M=", "24": "USDSROIS2Y="},
+        "fallback": "fed_funds_futures"
+      }
+    },
+    {
+      "id": "BOE", "name": "Bank of England", "short": "BoE", "region": "UK", "currency": "GBP",
+      "policy_rate": "BANK_RATE", "overnight": "SONIA", "step_bp": 25,
+      "calendar_url": "https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates",
+      "meetings": ["2026-02-05", "2026-03-19", "2026-04-30", "2026-06-18", "2026-07-30", "2026-09-17", "2026-11-05", "2026-12-17",
+                   "2027-02-04", "2027-03-18", "2027-05-06", "2027-06-17", "2027-08-05", "2027-09-16", "2027-11-04", "2027-12-16"],
+      "provisional_from": "2027-01-01",
+      "ois": {
+        "refinitiv": {"1": "GBPOIS1M=", "3": "GBPOIS3M=", "6": "GBPOIS6M=", "9": "GBPOIS9M=", "12": "GBPOIS1Y=", "18": "GBPOIS18M=", "24": "GBPOIS2Y="},
+        "fallback": "boe_ois_curve"
+      }
+    },
+    {
+      "id": "ECB", "name": "European Central Bank", "short": "ECB", "region": "EA", "currency": "EUR",
+      "policy_rate": "ECB_DFR", "overnight": "ESTR", "step_bp": 25,
+      "calendar_url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+      "meetings": ["2026-02-05", "2026-03-19", "2026-04-30", "2026-06-11", "2026-07-23", "2026-09-10", "2026-10-29", "2026-12-17",
+                   "2027-02-04", "2027-03-18", "2027-04-29", "2027-06-10", "2027-07-22", "2027-09-09", "2027-10-28", "2027-12-16"],
+      "provisional_from": "2027-01-01",
+      "ois": {
+        "refinitiv": {"1": "EUREST1M=", "3": "EUREST3M=", "6": "EUREST6M=", "9": "EUREST9M=", "12": "EUREST1Y=", "18": "EUREST18M=", "24": "EUREST2Y="},
+        "fallback": "curve_proxy",
+        "proxy_curve": {"3": "EA_AAA_3M", "6": "EA_AAA_6M", "12": "EA_AAA_1Y", "24": "EA_AAA_2Y"}
+      }
+    },
+    {
+      "id": "BOJ", "name": "Bank of Japan", "short": "BoJ", "region": "JP", "currency": "JPY",
+      "policy_rate": "BOJ_RATE", "overnight": "BOJ_RATE", "step_bp": 25,
+      "calendar_url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+      "meetings": ["2026-01-23", "2026-03-19", "2026-05-01", "2026-06-16", "2026-07-31", "2026-09-18", "2026-10-30", "2026-12-18",
+                   "2027-01-22", "2027-03-18", "2027-04-30", "2027-06-15", "2027-07-30", "2027-09-17", "2027-10-29", "2027-12-17"],
+      "provisional_from": "2026-01-01",
+      "ois": {
+        "refinitiv": {"1": "JPYTONA1M=", "3": "JPYTONA3M=", "6": "JPYTONA6M=", "9": "JPYTONA9M=", "12": "JPYTONA1Y=", "18": "JPYTONA18M=", "24": "JPYTONA2Y="},
+        "fallback": "curve_proxy",
+        "proxy_curve": {"12": "JP1Y", "24": "JP2Y"}
+      }
+    }
+  ]
+}

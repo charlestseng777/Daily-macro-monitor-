@@ -1,0 +1,1611 @@
+{
+ "_comment": [
+  "Instrument registry. Every series the dashboard uses is declared here, with an ordered list of sources.",
+  "The pipeline tries sources in order and keeps the first that returns data; Refinitiv entries are skipped unless REFINITIV_* credentials are set.",
+  "kind: yield|rate -> level in %, moves in bp. price|fx -> moves in %. spread -> credit OAS in %, moves in bp. vol -> index points.",
+  "risk_sign: +1 if a rise is risk-on, -1 if a rise is risk-off (credit spreads, VIX). fx_sign: +1 if a rise means the local currency strengthened vs USD.",
+  "demo: starting level and daily vol used ONLY by the clearly-labelled demo generator (python -m macrodash seed-demo).",
+  "Codes marked verify:true are best-known identifiers that could not be checked from the build sandbox; check them on first live run (python -m macrodash sources)."
+ ],
+ "instruments": [
+  {
+   "id": "US1Y",
+   "name": "US 1Y Treasury",
+   "short": "UST 1Y",
+   "asset_class": "rates",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 1,
+   "sources": [
+    [
+     "refinitiv",
+     "US1YT=RR"
+    ],
+    [
+     "treasury",
+     "1 Yr"
+    ],
+    [
+     "fred",
+     "DGS1"
+    ]
+   ],
+   "demo": {
+    "level": 3.45,
+    "vol": 0.035
+   }
+  },
+  {
+   "id": "US2Y",
+   "name": "US 2Y Treasury",
+   "short": "UST 2Y",
+   "asset_class": "rates",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 2,
+   "sources": [
+    [
+     "refinitiv",
+     "US2YT=RR"
+    ],
+    [
+     "treasury",
+     "2 Yr"
+    ],
+    [
+     "fred",
+     "DGS2"
+    ],
+    [
+     "stooq",
+     "2usy.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.5,
+    "vol": 0.055
+   }
+  },
+  {
+   "id": "US5Y",
+   "name": "US 5Y Treasury",
+   "short": "UST 5Y",
+   "asset_class": "rates",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 5,
+   "sources": [
+    [
+     "refinitiv",
+     "US5YT=RR"
+    ],
+    [
+     "treasury",
+     "5 Yr"
+    ],
+    [
+     "fred",
+     "DGS5"
+    ],
+    [
+     "stooq",
+     "5usy.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.65,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "US10Y",
+   "name": "US 10Y Treasury",
+   "short": "UST 10Y",
+   "asset_class": "rates",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "US10YT=RR"
+    ],
+    [
+     "treasury",
+     "10 Yr"
+    ],
+    [
+     "fred",
+     "DGS10"
+    ],
+    [
+     "stooq",
+     "10usy.b"
+    ]
+   ],
+   "demo": {
+    "level": 4.1,
+    "vol": 0.055
+   }
+  },
+  {
+   "id": "US30Y",
+   "name": "US 30Y Treasury",
+   "short": "UST 30Y",
+   "asset_class": "rates",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 30,
+   "sources": [
+    [
+     "refinitiv",
+     "US30YT=RR"
+    ],
+    [
+     "treasury",
+     "30 Yr"
+    ],
+    [
+     "fred",
+     "DGS30"
+    ],
+    [
+     "stooq",
+     "30usy.b"
+    ]
+   ],
+   "demo": {
+    "level": 4.7,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "UK2Y",
+   "name": "UK 2Y Gilt",
+   "short": "Gilt 2Y",
+   "asset_class": "rates",
+   "region": "UK",
+   "kind": "yield",
+   "tenor": 2,
+   "sources": [
+    [
+     "refinitiv",
+     "GB2YT=RR"
+    ],
+    [
+     "boe_curve",
+     "nominal:2"
+    ],
+    [
+     "cnbc",
+     "GB2Y-GB"
+    ],
+    [
+     "stooq",
+     "2uky.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.75,
+    "vol": 0.055
+   }
+  },
+  {
+   "id": "UK5Y",
+   "name": "UK 5Y Gilt",
+   "short": "Gilt 5Y",
+   "asset_class": "rates",
+   "region": "UK",
+   "kind": "yield",
+   "tenor": 5,
+   "sources": [
+    [
+     "refinitiv",
+     "GB5YT=RR"
+    ],
+    [
+     "boe_curve",
+     "nominal:5"
+    ],
+    [
+     "boe",
+     "IUDSNPY"
+    ],
+    [
+     "stooq",
+     "5uky.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.95,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "UK10Y",
+   "name": "UK 10Y Gilt",
+   "short": "Gilt 10Y",
+   "asset_class": "rates",
+   "region": "UK",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "GB10YT=RR"
+    ],
+    [
+     "boe_curve",
+     "nominal:10"
+    ],
+    [
+     "boe",
+     "IUDMNPY"
+    ],
+    [
+     "stooq",
+     "10uky.b"
+    ]
+   ],
+   "demo": {
+    "level": 4.5,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "UK30Y",
+   "name": "UK 30Y Gilt",
+   "short": "Gilt 30Y",
+   "asset_class": "rates",
+   "region": "UK",
+   "kind": "yield",
+   "tenor": 30,
+   "sources": [
+    [
+     "refinitiv",
+     "GB30YT=RR"
+    ],
+    [
+     "boe_curve",
+     "nominal:30"
+    ],
+    [
+     "cnbc",
+     "GB30Y-GB"
+    ],
+    [
+     "stooq",
+     "30uky.b"
+    ]
+   ],
+   "demo": {
+    "level": 5.25,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "DE2Y",
+   "name": "Germany 2Y Schatz",
+   "short": "Schatz",
+   "asset_class": "rates",
+   "region": "DE",
+   "kind": "yield",
+   "tenor": 2,
+   "sources": [
+    [
+     "refinitiv",
+     "DE2YT=RR"
+    ],
+    [
+     "bundesbank",
+     "BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A"
+    ],
+    [
+     "cnbc",
+     "DE2Y-DE"
+    ],
+    [
+     "stooq",
+     "2dey.b"
+    ]
+   ],
+   "demo": {
+    "level": 2.05,
+    "vol": 0.045
+   }
+  },
+  {
+   "id": "DE5Y",
+   "name": "Germany 5Y Bobl",
+   "short": "Bobl",
+   "asset_class": "rates",
+   "region": "DE",
+   "kind": "yield",
+   "tenor": 5,
+   "sources": [
+    [
+     "refinitiv",
+     "DE5YT=RR"
+    ],
+    [
+     "bundesbank",
+     "BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A"
+    ],
+    [
+     "cnbc",
+     "DE5Y-DE"
+    ],
+    [
+     "stooq",
+     "5dey.b"
+    ]
+   ],
+   "demo": {
+    "level": 2.3,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "DE10Y",
+   "name": "Germany 10Y Bund",
+   "short": "Bund",
+   "asset_class": "rates",
+   "region": "DE",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "DE10YT=RR"
+    ],
+    [
+     "bundesbank",
+     "BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A"
+    ],
+    [
+     "cnbc",
+     "DE10Y-DE"
+    ],
+    [
+     "stooq",
+     "10dey.b"
+    ]
+   ],
+   "demo": {
+    "level": 2.65,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "DE30Y",
+   "name": "Germany 30Y Bund",
+   "short": "Buxl",
+   "asset_class": "rates",
+   "region": "DE",
+   "kind": "yield",
+   "tenor": 30,
+   "sources": [
+    [
+     "refinitiv",
+     "DE30YT=RR"
+    ],
+    [
+     "bundesbank",
+     "BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R30XX.R.A.A._Z._Z.A"
+    ],
+    [
+     "cnbc",
+     "DE30Y-DE"
+    ],
+    [
+     "stooq",
+     "30dey.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.2,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "JP2Y",
+   "name": "Japan 2Y JGB",
+   "short": "JGB 2Y",
+   "asset_class": "rates",
+   "region": "JP",
+   "kind": "yield",
+   "tenor": 2,
+   "sources": [
+    [
+     "refinitiv",
+     "JP2YT=RR"
+    ],
+    [
+     "mof",
+     "2Y"
+    ],
+    [
+     "cnbc",
+     "JP2Y-JP"
+    ],
+    [
+     "stooq",
+     "2jpy.b"
+    ]
+   ],
+   "demo": {
+    "level": 1.0,
+    "vol": 0.02
+   }
+  },
+  {
+   "id": "JP10Y",
+   "name": "Japan 10Y JGB",
+   "short": "JGB 10Y",
+   "asset_class": "rates",
+   "region": "JP",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "JP10YT=RR"
+    ],
+    [
+     "mof",
+     "10Y"
+    ],
+    [
+     "cnbc",
+     "JP10Y-JP"
+    ],
+    [
+     "stooq",
+     "10jpy.b"
+    ]
+   ],
+   "demo": {
+    "level": 1.7,
+    "vol": 0.025
+   }
+  },
+  {
+   "id": "JP30Y",
+   "name": "Japan 30Y JGB",
+   "short": "JGB 30Y",
+   "asset_class": "rates",
+   "region": "JP",
+   "kind": "yield",
+   "tenor": 30,
+   "sources": [
+    [
+     "refinitiv",
+     "JP30YT=RR"
+    ],
+    [
+     "mof",
+     "30Y"
+    ],
+    [
+     "cnbc",
+     "JP30Y-JP"
+    ],
+    [
+     "stooq",
+     "30jpy.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.3,
+    "vol": 0.035
+   }
+  },
+  {
+   "id": "JP1Y",
+   "name": "Japan 1Y JGB",
+   "short": "JGB 1Y",
+   "asset_class": "rates",
+   "region": "JP",
+   "kind": "yield",
+   "tenor": 1,
+   "sources": [
+    [
+     "refinitiv",
+     "JP1YT=RR"
+    ],
+    [
+     "mof",
+     "1Y"
+    ]
+   ],
+   "demo": {
+    "level": 0.85,
+    "vol": 0.015
+   },
+   "hidden": true
+  },
+  {
+   "id": "FR10Y",
+   "name": "France 10Y OAT",
+   "short": "OAT 10Y",
+   "asset_class": "rates",
+   "region": "FR",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "FR10YT=RR"
+    ],
+    [
+     "cnbc",
+     "FR10Y-FR"
+    ],
+    [
+     "stooq",
+     "10fry.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.4,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "IT10Y",
+   "name": "Italy 10Y BTP",
+   "short": "BTP 10Y",
+   "asset_class": "rates",
+   "region": "IT",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "IT10YT=RR"
+    ],
+    [
+     "cnbc",
+     "IT10Y-IT"
+    ],
+    [
+     "stooq",
+     "10ity.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.55,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "ES10Y",
+   "name": "Spain 10Y Bono",
+   "short": "Bono 10Y",
+   "asset_class": "rates",
+   "region": "ES",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "ES10YT=RR"
+    ],
+    [
+     "cnbc",
+     "ES10Y-ES"
+    ],
+    [
+     "stooq",
+     "10esy.b"
+    ]
+   ],
+   "demo": {
+    "level": 3.2,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "CN10Y",
+   "name": "China 10Y CGB",
+   "short": "CGB 10Y",
+   "asset_class": "rates",
+   "region": "CN",
+   "kind": "yield",
+   "tenor": 10,
+   "sources": [
+    [
+     "refinitiv",
+     "CN10YT=RR"
+    ],
+    [
+     "cnbc",
+     "CN10Y-CN"
+    ],
+    [
+     "stooq",
+     "10cny.b"
+    ]
+   ],
+   "demo": {
+    "level": 1.8,
+    "vol": 0.02
+   }
+  },
+  {
+   "id": "US3M",
+   "name": "US 3M Bill",
+   "short": "UST 3M",
+   "asset_class": "money",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 0.25,
+   "sources": [
+    [
+     "treasury",
+     "3 Mo"
+    ],
+    [
+     "fred",
+     "DGS3MO"
+    ]
+   ],
+   "demo": {
+    "level": 3.85,
+    "vol": 0.01
+   },
+   "hidden": true
+  },
+  {
+   "id": "US6M",
+   "name": "US 6M Bill",
+   "short": "UST 6M",
+   "asset_class": "money",
+   "region": "US",
+   "kind": "yield",
+   "tenor": 0.5,
+   "sources": [
+    [
+     "treasury",
+     "6 Mo"
+    ],
+    [
+     "fred",
+     "DGS6MO"
+    ]
+   ],
+   "demo": {
+    "level": 3.7,
+    "vol": 0.02
+   },
+   "hidden": true
+  },
+  {
+   "id": "EA_AAA_3M",
+   "name": "Euro area AAA 3M",
+   "short": "EA 3M",
+   "asset_class": "money",
+   "region": "EA",
+   "kind": "yield",
+   "tenor": 0.25,
+   "sources": [
+    [
+     "ecb",
+     "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_3M"
+    ]
+   ],
+   "demo": {
+    "level": 1.95,
+    "vol": 0.01
+   },
+   "hidden": true
+  },
+  {
+   "id": "EA_AAA_6M",
+   "name": "Euro area AAA 6M",
+   "short": "EA 6M",
+   "asset_class": "money",
+   "region": "EA",
+   "kind": "yield",
+   "tenor": 0.5,
+   "sources": [
+    [
+     "ecb",
+     "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_6M"
+    ]
+   ],
+   "demo": {
+    "level": 1.92,
+    "vol": 0.015
+   },
+   "hidden": true
+  },
+  {
+   "id": "EA_AAA_1Y",
+   "name": "Euro area AAA 1Y",
+   "short": "EA 1Y",
+   "asset_class": "money",
+   "region": "EA",
+   "kind": "yield",
+   "tenor": 1,
+   "sources": [
+    [
+     "ecb",
+     "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_1Y"
+    ]
+   ],
+   "demo": {
+    "level": 1.9,
+    "vol": 0.025
+   },
+   "hidden": true
+  },
+  {
+   "id": "EA_AAA_2Y",
+   "name": "Euro area AAA 2Y",
+   "short": "EA 2Y",
+   "asset_class": "money",
+   "region": "EA",
+   "kind": "yield",
+   "tenor": 2,
+   "sources": [
+    [
+     "ecb",
+     "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y"
+    ]
+   ],
+   "demo": {
+    "level": 2.0,
+    "vol": 0.04
+   },
+   "hidden": true
+  },
+  {
+   "id": "US5YBE",
+   "name": "US 5Y breakeven",
+   "short": "US 5Y BE",
+   "asset_class": "inflation",
+   "region": "US",
+   "kind": "yield",
+   "sources": [
+    [
+     "fred",
+     "T5YIE"
+    ]
+   ],
+   "demo": {
+    "level": 2.35,
+    "vol": 0.025
+   }
+  },
+  {
+   "id": "US10YBE",
+   "name": "US 10Y breakeven",
+   "short": "US 10Y BE",
+   "asset_class": "inflation",
+   "region": "US",
+   "kind": "yield",
+   "sources": [
+    [
+     "fred",
+     "T10YIE"
+    ]
+   ],
+   "demo": {
+    "level": 2.3,
+    "vol": 0.02
+   }
+  },
+  {
+   "id": "US10YREAL",
+   "name": "US 10Y real yield (TIPS)",
+   "short": "US 10Y real",
+   "asset_class": "inflation",
+   "region": "US",
+   "kind": "yield",
+   "sources": [
+    [
+     "fred",
+     "DFII10"
+    ]
+   ],
+   "demo": {
+    "level": 1.8,
+    "vol": 0.045
+   }
+  },
+  {
+   "id": "UK10YBE",
+   "name": "UK 10Y breakeven (RPI)",
+   "short": "UK 10Y BE",
+   "asset_class": "inflation",
+   "region": "UK",
+   "kind": "yield",
+   "sources": [
+    [
+     "boe_curve",
+     "inflation:10"
+    ],
+    [
+     "refinitiv",
+     "GBBEI10Y=RR",
+     {
+      "verify": true
+     }
+    ]
+   ],
+   "demo": {
+    "level": 3.35,
+    "vol": 0.03
+   }
+  },
+  {
+   "id": "DE10YBE",
+   "name": "Germany 10Y breakeven",
+   "short": "DE 10Y BE",
+   "asset_class": "inflation",
+   "region": "DE",
+   "kind": "yield",
+   "sources": [
+    [
+     "refinitiv",
+     "DEBEI10Y=RR",
+     {
+      "verify": true
+     }
+    ]
+   ],
+   "demo": {
+    "level": 2.05,
+    "vol": 0.02
+   }
+  },
+  {
+   "id": "JP10YBE",
+   "name": "Japan 10Y inflation swap",
+   "short": "JP 10Y infl.",
+   "asset_class": "inflation",
+   "region": "JP",
+   "kind": "yield",
+   "sources": [
+    [
+     "refinitiv",
+     "JPYCPI10Y=",
+     {
+      "verify": true
+     }
+    ]
+   ],
+   "demo": {
+    "level": 1.65,
+    "vol": 0.015
+   }
+  },
+  {
+   "id": "FED_UPPER",
+   "name": "Fed funds target (upper)",
+   "short": "Fed funds",
+   "asset_class": "policy",
+   "region": "US",
+   "kind": "rate",
+   "sources": [
+    [
+     "fred",
+     "DFEDTARU"
+    ]
+   ],
+   "demo": {
+    "level": 3.75,
+    "vol": 0
+   }
+  },
+  {
+   "id": "SOFR",
+   "name": "SOFR",
+   "short": "SOFR",
+   "asset_class": "policy",
+   "region": "US",
+   "kind": "rate",
+   "sources": [
+    [
+     "fred",
+     "SOFR"
+    ]
+   ],
+   "demo": {
+    "level": 3.62,
+    "vol": 0.005
+   },
+   "hidden": true
+  },
+  {
+   "id": "EFFR",
+   "name": "Effective fed funds rate",
+   "short": "EFFR",
+   "asset_class": "policy",
+   "region": "US",
+   "kind": "rate",
+   "sources": [
+    [
+     "fred",
+     "EFFR"
+    ]
+   ],
+   "demo": {
+    "level": 3.58,
+    "vol": 0.002
+   },
+   "hidden": true
+  },
+  {
+   "id": "BANK_RATE",
+   "name": "Bank Rate",
+   "short": "Bank Rate",
+   "asset_class": "policy",
+   "region": "UK",
+   "kind": "rate",
+   "sources": [
+    [
+     "boe",
+     "IUDBEDR"
+    ]
+   ],
+   "demo": {
+    "level": 3.75,
+    "vol": 0
+   }
+  },
+  {
+   "id": "SONIA",
+   "name": "SONIA",
+   "short": "SONIA",
+   "asset_class": "policy",
+   "region": "UK",
+   "kind": "rate",
+   "sources": [
+    [
+     "boe",
+     "IUDSOIA"
+    ]
+   ],
+   "demo": {
+    "level": 3.72,
+    "vol": 0.003
+   },
+   "hidden": true
+  },
+  {
+   "id": "ECB_DFR",
+   "name": "ECB deposit facility rate",
+   "short": "ECB DFR",
+   "asset_class": "policy",
+   "region": "EA",
+   "kind": "rate",
+   "sources": [
+    [
+     "ecb",
+     "FM/D.U2.EUR.4F.KR.DFR.LEV"
+    ]
+   ],
+   "demo": {
+    "level": 2.0,
+    "vol": 0
+   }
+  },
+  {
+   "id": "ESTR",
+   "name": "€STR",
+   "short": "€STR",
+   "asset_class": "policy",
+   "region": "EA",
+   "kind": "rate",
+   "sources": [
+    [
+     "ecb",
+     "EST/B.EU000A2X2A25.WT"
+    ]
+   ],
+   "demo": {
+    "level": 1.93,
+    "vol": 0.003
+   },
+   "hidden": true
+  },
+  {
+   "id": "BOJ_RATE",
+   "name": "BoJ policy rate (call rate)",
+   "short": "BoJ",
+   "asset_class": "policy",
+   "region": "JP",
+   "kind": "rate",
+   "sources": [
+    [
+     "refinitiv",
+     "JPONMU=RR"
+    ],
+    [
+     "fred",
+     "IRSTCI01JPM156N"
+    ]
+   ],
+   "demo": {
+    "level": 0.75,
+    "vol": 0
+   }
+  },
+  {
+   "id": "DXY",
+   "name": "US dollar index",
+   "short": "DXY",
+   "asset_class": "fx",
+   "region": "US",
+   "kind": "fx",
+   "fx_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".DXY"
+    ],
+    [
+     "yahoo",
+     "DX-Y.NYB"
+    ],
+    [
+     "stooq",
+     "dx.f"
+    ]
+   ],
+   "demo": {
+    "level": 99.0,
+    "vol": 0.0045
+   }
+  },
+  {
+   "id": "EURUSD",
+   "name": "EUR/USD",
+   "short": "EURUSD",
+   "asset_class": "fx",
+   "region": "EA",
+   "kind": "fx",
+   "fx_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     "EUR="
+    ],
+    [
+     "yahoo",
+     "EURUSD=X"
+    ],
+    [
+     "ecb",
+     "EXR/D.USD.EUR.SP00.A"
+    ],
+    [
+     "stooq",
+     "eurusd"
+    ]
+   ],
+   "demo": {
+    "level": 1.16,
+    "vol": 0.0045
+   }
+  },
+  {
+   "id": "GBPUSD",
+   "name": "GBP/USD",
+   "short": "GBPUSD",
+   "asset_class": "fx",
+   "region": "UK",
+   "kind": "fx",
+   "fx_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     "GBP="
+    ],
+    [
+     "yahoo",
+     "GBPUSD=X"
+    ],
+    [
+     "stooq",
+     "gbpusd"
+    ]
+   ],
+   "demo": {
+    "level": 1.33,
+    "vol": 0.005
+   }
+  },
+  {
+   "id": "USDJPY",
+   "name": "USD/JPY",
+   "short": "USDJPY",
+   "asset_class": "fx",
+   "region": "JP",
+   "kind": "fx",
+   "fx_sign": -1,
+   "sources": [
+    [
+     "refinitiv",
+     "JPY="
+    ],
+    [
+     "yahoo",
+     "JPY=X"
+    ],
+    [
+     "stooq",
+     "usdjpy"
+    ]
+   ],
+   "demo": {
+    "level": 150.0,
+    "vol": 0.006
+   }
+  },
+  {
+   "id": "USDCNY",
+   "name": "USD/CNY",
+   "short": "USDCNY",
+   "asset_class": "fx",
+   "region": "CN",
+   "kind": "fx",
+   "fx_sign": -1,
+   "sources": [
+    [
+     "refinitiv",
+     "CNY="
+    ],
+    [
+     "yahoo",
+     "CNY=X"
+    ],
+    [
+     "stooq",
+     "usdcny"
+    ]
+   ],
+   "demo": {
+    "level": 7.12,
+    "vol": 0.0018
+   }
+  },
+  {
+   "id": "SPX",
+   "name": "S&P 500",
+   "short": "S&P 500",
+   "asset_class": "equities",
+   "region": "US",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".SPX"
+    ],
+    [
+     "yahoo",
+     "^GSPC"
+    ],
+    [
+     "stooq",
+     "^spx"
+    ],
+    [
+     "fred",
+     "SP500"
+    ]
+   ],
+   "demo": {
+    "level": 6600,
+    "vol": 0.009
+   }
+  },
+  {
+   "id": "FTSE",
+   "name": "FTSE 100",
+   "short": "FTSE 100",
+   "asset_class": "equities",
+   "region": "UK",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".FTSE"
+    ],
+    [
+     "yahoo",
+     "^FTSE"
+    ],
+    [
+     "stooq",
+     "^ukx"
+    ]
+   ],
+   "demo": {
+    "level": 9300,
+    "vol": 0.008
+   }
+  },
+  {
+   "id": "SX5E",
+   "name": "Euro Stoxx 50",
+   "short": "SX5E",
+   "asset_class": "equities",
+   "region": "EA",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".STOXX50E"
+    ],
+    [
+     "yahoo",
+     "^STOXX50E"
+    ],
+    [
+     "stooq",
+     "^stx"
+    ]
+   ],
+   "demo": {
+    "level": 5500,
+    "vol": 0.01
+   }
+  },
+  {
+   "id": "NKY",
+   "name": "Nikkei 225",
+   "short": "Nikkei",
+   "asset_class": "equities",
+   "region": "JP",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".N225"
+    ],
+    [
+     "yahoo",
+     "^N225"
+    ],
+    [
+     "stooq",
+     "^nkx"
+    ],
+    [
+     "fred",
+     "NIKKEI225"
+    ]
+   ],
+   "demo": {
+    "level": 45000,
+    "vol": 0.012
+   }
+  },
+  {
+   "id": "CSI300",
+   "name": "CSI 300",
+   "short": "CSI 300",
+   "asset_class": "equities",
+   "region": "CN",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "refinitiv",
+     ".CSI300"
+    ],
+    [
+     "yahoo",
+     "000300.SS"
+    ],
+    [
+     "cnbc",
+     ".CSI300"
+    ]
+   ],
+   "demo": {
+    "level": 4500,
+    "vol": 0.011
+   }
+  },
+  {
+   "id": "VIX",
+   "name": "VIX",
+   "short": "VIX",
+   "asset_class": "equities",
+   "region": "US",
+   "kind": "vol",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "yahoo",
+     "^VIX"
+    ],
+    [
+     "fred",
+     "VIXCLS"
+    ]
+   ],
+   "demo": {
+    "level": 16.0,
+    "vol": 0.06
+   }
+  },
+  {
+   "id": "BRENT",
+   "name": "Brent crude",
+   "short": "Brent",
+   "asset_class": "commodities",
+   "region": "GLOBAL",
+   "kind": "price",
+   "sources": [
+    [
+     "refinitiv",
+     "LCOc1"
+    ],
+    [
+     "yahoo",
+     "BZ=F"
+    ],
+    [
+     "eia",
+     "PET.RBRTE.D"
+    ],
+    [
+     "fred",
+     "DCOILBRENTEU"
+    ]
+   ],
+   "demo": {
+    "level": 66.0,
+    "vol": 0.018
+   }
+  },
+  {
+   "id": "WTI",
+   "name": "WTI crude",
+   "short": "WTI",
+   "asset_class": "commodities",
+   "region": "US",
+   "kind": "price",
+   "sources": [
+    [
+     "refinitiv",
+     "CLc1"
+    ],
+    [
+     "yahoo",
+     "CL=F"
+    ],
+    [
+     "eia",
+     "PET.RWTC.D"
+    ],
+    [
+     "fred",
+     "DCOILWTICO"
+    ]
+   ],
+   "demo": {
+    "level": 62.0,
+    "vol": 0.019
+   }
+  },
+  {
+   "id": "GOLD",
+   "name": "Gold",
+   "short": "Gold",
+   "asset_class": "commodities",
+   "region": "GLOBAL",
+   "kind": "price",
+   "sources": [
+    [
+     "refinitiv",
+     "XAU="
+    ],
+    [
+     "yahoo",
+     "GC=F"
+    ],
+    [
+     "stooq",
+     "xauusd"
+    ]
+   ],
+   "demo": {
+    "level": 3900,
+    "vol": 0.011
+   }
+  },
+  {
+   "id": "COPPER",
+   "name": "Copper",
+   "short": "Copper",
+   "asset_class": "commodities",
+   "region": "CN",
+   "kind": "price",
+   "sources": [
+    [
+     "refinitiv",
+     "HGc1"
+    ],
+    [
+     "yahoo",
+     "HG=F"
+    ]
+   ],
+   "demo": {
+    "level": 4.9,
+    "vol": 0.014
+   }
+  },
+  {
+   "id": "TTF",
+   "name": "Dutch TTF gas",
+   "short": "TTF gas",
+   "asset_class": "commodities",
+   "region": "EA",
+   "kind": "price",
+   "sources": [
+    [
+     "refinitiv",
+     "TRNLTTFMc1"
+    ],
+    [
+     "yahoo",
+     "TTF=F"
+    ]
+   ],
+   "demo": {
+    "level": 32.0,
+    "vol": 0.03
+   }
+  },
+  {
+   "id": "BRENT_JPY",
+   "name": "Brent in yen",
+   "short": "Brent ¥",
+   "asset_class": "commodities",
+   "region": "JP",
+   "kind": "price",
+   "sources": [
+    [
+     "derived",
+     "BRENT*USDJPY"
+    ]
+   ],
+   "demo": {
+    "level": 9900,
+    "vol": 0.019
+   },
+   "hidden": true
+  },
+  {
+   "id": "US_IG_OAS",
+   "name": "US IG credit spread (OAS)",
+   "short": "US IG",
+   "asset_class": "credit",
+   "region": "US",
+   "kind": "spread",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "fred",
+     "BAMLC0A0CM"
+    ]
+   ],
+   "demo": {
+    "level": 0.8,
+    "vol": 0.012
+   }
+  },
+  {
+   "id": "US_HY_OAS",
+   "name": "US HY credit spread (OAS)",
+   "short": "US HY",
+   "asset_class": "credit",
+   "region": "US",
+   "kind": "spread",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "fred",
+     "BAMLH0A0HYM2"
+    ]
+   ],
+   "demo": {
+    "level": 2.9,
+    "vol": 0.05
+   }
+  },
+  {
+   "id": "EU_HY_OAS",
+   "name": "Euro HY credit spread (OAS)",
+   "short": "EUR HY",
+   "asset_class": "credit",
+   "region": "EA",
+   "kind": "spread",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "fred",
+     "BAMLHE00EHYIOAS"
+    ]
+   ],
+   "demo": {
+    "level": 3.0,
+    "vol": 0.045
+   }
+  },
+  {
+   "id": "UK_CREDIT",
+   "name": "GBP corporate bonds (SLXX ETF)",
+   "short": "GBP IG",
+   "asset_class": "credit",
+   "region": "UK",
+   "kind": "price",
+   "risk_sign": 1,
+   "sources": [
+    [
+     "yahoo",
+     "SLXX.L"
+    ]
+   ],
+   "demo": {
+    "level": 120.0,
+    "vol": 0.003
+   }
+  },
+  {
+   "id": "JP_CREDIT",
+   "name": "Japan credit (proxy)",
+   "short": "JP credit",
+   "asset_class": "credit",
+   "region": "JP",
+   "kind": "spread",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "refinitiv",
+     "ITRAXX-JAPAN=",
+     {
+      "verify": true
+     }
+    ]
+   ],
+   "demo": {
+    "level": 0.55,
+    "vol": 0.01
+   }
+  },
+  {
+   "id": "CN_CREDIT",
+   "name": "Asia HY credit (proxy)",
+   "short": "Asia HY",
+   "asset_class": "credit",
+   "region": "CN",
+   "kind": "spread",
+   "risk_sign": -1,
+   "sources": [
+    [
+     "refinitiv",
+     "ITRAXX-ASIAXJ=",
+     {
+      "verify": true
+     }
+    ]
+   ],
+   "demo": {
+    "level": 1.1,
+    "vol": 0.015
+   }
+  }
+ ]
+}

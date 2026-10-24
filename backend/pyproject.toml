@@ -1,0 +1,9 @@
+[project]
+name = "macrodash"
+version = "1.0.0"
+description = "Global Macro Research Dashboard backend"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

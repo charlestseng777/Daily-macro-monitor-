@@ -1,0 +1,20 @@
+{
+  "_comment": "RSS/Atom feeds for the Central Bank Speeches panel. Any feed that fails is skipped.",
+  "speeches": [
+    {"bank": "Fed", "url": "https://www.federalreserve.gov/feeds/speeches.xml"},
+    {"bank": "BoE", "url": "https://www.bankofengland.co.uk/rss/speeches"},
+    {"bank": "ECB", "url": "https://www.ecb.europa.eu/rss/press.html"},
+    {"bank": "BoJ", "url": "https://www.boj.or.jp/en/rss/whatsnew.xml"}
+  ],
+  "calendar_fred_releases": {
+    "_comment": "FRED release ids shown on the economic calendar when FRED_API_KEY is set.",
+    "50": "Employment Situation (payrolls)",
+    "10": "Consumer Price Index",
+    "53": "Gross Domestic Product",
+    "54": "Personal Income and Outlays (PCE)",
+    "46": "Producer Price Index",
+    "9": "Advance Retail Sales",
+    "180": "Unemployment Insurance Weekly Claims",
+    "13": "Industrial Production"
+  }
+}

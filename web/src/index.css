@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+  body { font-feature-settings: 'ss01', 'cv11'; }
+  ::selection { background: rgba(250, 178, 25, 0.35); }
+}
+
+@layer components {
+  .card { @apply bg-surface border border-line rounded-2xl; }
+  .eyebrow { @apply text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-3; }
+  .num { font-variant-numeric: tabular-nums; }
+  .chip { @apply inline-flex items-center rounded-full border border-line px-2.5 py-0.5 text-xs text-ink-2; }
+  .btn-seg { @apply px-2.5 py-1 text-xs font-medium rounded-md text-ink-3 hover:text-ink hover:bg-raised transition-colors; }
+  .btn-seg[aria-pressed='true'] { @apply bg-raised text-ink; }
+  .table-head { @apply text-[11px] font-medium uppercase tracking-wider text-ink-3; }
+}
+
+.tone-up { color: theme('colors.up'); }
+.tone-down { color: theme('colors.down'); }
+.tone-flat { color: theme('colors.ink.3'); }
+
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+
+@media print {
+  body { background: white; color: black; }
+}
