@@ -39,7 +39,7 @@ OK    DE2Y         cnbc:DE2Y-DE                                     520 rows, la
 FAIL  DE2Y         stooq:2dey.b                                   Stooq 2dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE5Y         refinitiv:DE5YT=RR                                 Refinitiv not configured
 OK    DE5Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A   2998 rows, last 2026-10-23 = 3.1200
-OK    DE5Y         cnbc:DE5Y-DE                                     518 rows, last 2026-10-23 = 3.1389
+OK    DE5Y         cnbc:DE5Y-DE                                     520 rows, last 2026-10-23 = 3.1389
 FAIL  DE5Y         stooq:5dey.b                                   Stooq 5dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE10Y        refinitiv:DE10YT=RR                                Refinitiv not configured
 OK    DE10Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A   2998 rows, last 2026-10-23 = 3.3900
@@ -64,13 +64,13 @@ FAIL  JP30Y        stooq:30jpy.b                                  Stooq 30jpy.b:
 FAIL  JP1Y         refinitiv:JP1YT=RR                                 Refinitiv not configured
 OK    JP1Y         mof:1Y                                         2883 rows, last 2026-10-22 = 1.6600
 FAIL  FR10Y        refinitiv:FR10YT=RR                                Refinitiv not configured
-OK    FR10Y        cnbc:FR10Y-FR                                    520 rows, last 2026-10-23 = 5.0192
+OK    FR10Y        cnbc:FR10Y-FR                                    519 rows, last 2026-10-23 = 5.0192
 FAIL  FR10Y        stooq:10fry.b                                  Stooq 10fry.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  IT10Y        refinitiv:IT10YT=RR                                Refinitiv not configured
 OK    IT10Y        cnbc:IT10Y-IT                                    519 rows, last 2026-10-23 = 4.5822
 FAIL  IT10Y        stooq:10ity.b                                  Stooq 10ity.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  ES10Y        refinitiv:ES10YT=RR                                Refinitiv not configured
-OK    ES10Y        cnbc:ES10Y-ES                                    519 rows, last 2026-10-23 = 4.0432
+OK    ES10Y        cnbc:ES10Y-ES                                    520 rows, last 2026-10-23 = 4.0432
 FAIL  ES10Y        stooq:10esy.b                                  Stooq 10esy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  CN10Y        refinitiv:CN10YT=RR                                Refinitiv not configured
 OK    CN10Y        cnbc:CN10Y-CN                                    481 rows, last 2026-10-23 = 1.6150
@@ -152,6 +152,6 @@ OK    TTF          yahoo:TTF=F                                      2265 rows, l
 OK    US_IG_OAS    fred:BAMLC0A0CM                                  774 rows, last 2026-10-22 = 0.8900
 OK    US_HY_OAS    fred:BAMLH0A0HYM2                                775 rows, last 2026-10-22 = 3.4000
 OK    EU_HY_OAS    fred:BAMLHE00EHYIOAS                             775 rows, last 2026-10-22 = 3.5400
-OK    UK_CREDIT    yahoo:SLXX.L                                     2984 rows, last 2026-10-23 = 117.1900
+OK    UK_CREDIT    yahoo:SLXX.L                                     2983 rows, last 2026-10-23 = 117.1900
 FAIL  JP_CREDIT    refinitiv:ITRAXX-JAPAN=                            Refinitiv not configured
 FAIL  CN_CREDIT    refinitiv:ITRAXX-ASIAXJ=                           Refinitiv not configured
