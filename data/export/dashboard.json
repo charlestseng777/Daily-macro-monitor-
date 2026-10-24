@@ -1,9 +1,9 @@
 {
  "meta": {
   "as_of": "2026-10-23",
-  "generated_at": "2026-10-24T20:44:11+00:00",
+  "generated_at": "2026-10-24T20:55:57+00:00",
   "mode": "live",
-  "build_ms": 7634,
+  "build_ms": 10764,
   "llm": {
    "used": false,
    "reason": "no ANTHROPIC_API_KEY"
