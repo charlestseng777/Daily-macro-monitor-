@@ -63,6 +63,13 @@ jobs:
         working-directory: backend
         env:
           MACRO_HTTP_RETRIES: '2'
+          # Refinitiv allows one session per account. Wait up to 10 minutes for
+          # another job (fed / UK dashboards run at 05:15 and 05:20) to sign out.
+          MACRO_REFINITIV_SESSION_RETRIES: '10'
+          MACRO_REFINITIV_SESSION_WAIT: '60'
+          # Repository variable: set to true to sign out a Workspace session
+          # left open overnight (Settings -> Secrets and variables -> Variables).
+          MACRO_REFINITIV_TAKE_SESSION: ${{ vars.MACRO_REFINITIV_TAKE_SESSION || 'false' }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
@@ -76,7 +83,8 @@ jobs:
           mkdir -p ../data/export
           python -m macrodash import || true
           # The probe is diagnostic only: bounded, and visible in the log.
-          timeout 600 python -m macrodash sources 2>&1 | tee ../data/export/sources-report.txt || true
+          # Probe without Refinitiv so the account's single session is kept for the real run.
+          MACRO_REFINITIV_DISABLED=1 timeout 600 python -m macrodash sources 2>&1 | tee ../data/export/sources-report.txt || true
           python -m macrodash run
           python -m macrodash export
 

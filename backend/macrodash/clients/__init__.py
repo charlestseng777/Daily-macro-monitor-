@@ -7,6 +7,7 @@ back non-empty, along with the provider that supplied it.
 from __future__ import annotations
 
 import logging
+import os
 
 import pandas as pd
 
@@ -25,7 +26,10 @@ class SourceRouter:
         self.http = http or HttpClient.from_settings()
         self.start = start or get_settings().history_start
         self.boe_curves = BoECurves(self.http, self.start)
-        self.rdp = rdp.RefinitivSession(self.http) if get_settings().refinitiv_configured else None
+        # MACRO_REFINITIV_DISABLED lets a step (e.g. the diagnostic probe) run
+        # without taking the account's single Refinitiv session.
+        disabled = os.environ.get("MACRO_REFINITIV_DISABLED", "").lower() in {"1", "true", "yes"}
+        self.rdp = rdp.RefinitivSession(self.http) if get_settings().refinitiv_configured and not disabled else None
         self.failures: dict[str, list[str]] = {}
 
     def _call(self, provider: str, code: str, kind: str) -> pd.Series:
