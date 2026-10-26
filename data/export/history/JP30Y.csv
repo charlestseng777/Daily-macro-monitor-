@@ -2378,7 +2378,7 @@ date,value,source
 2024-09-20,2.07,refinitiv:JP30YT=RR
 2024-09-24,2.05,refinitiv:JP30YT=RR
 2024-09-25,2.03,refinitiv:JP30YT=RR
-2024-09-26,2.101,mof:30Y
+2024-09-26,2.101,refinitiv:JP30YT=RR
 2024-09-27,2.09,refinitiv:JP30YT=RR
 2024-09-30,2.07,refinitiv:JP30YT=RR
 2024-10-01,2.07,refinitiv:JP30YT=RR
@@ -2883,3 +2883,4 @@ date,value,source
 2026-10-21,3.922,refinitiv:JP30YT=RR
 2026-10-22,3.889,refinitiv:JP30YT=RR
 2026-10-23,3.83,refinitiv:JP30YT=RR
+2026-10-26,3.805,refinitiv:JP30YT=RR

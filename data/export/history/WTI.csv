@@ -2643,7 +2643,7 @@ date,value,source
 2025-07-01,65.53,refinitiv:CLc1
 2025-07-02,67.53,refinitiv:CLc1
 2025-07-03,67.18,refinitiv:CLc1
-2025-07-04,66.5,yahoo:CL=F
+2025-07-04,66.5,refinitiv:CLc1
 2025-07-07,67.92,refinitiv:CLc1
 2025-07-08,68.18,refinitiv:CLc1
 2025-07-09,68.29,refinitiv:CLc1

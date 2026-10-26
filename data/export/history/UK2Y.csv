@@ -42,7 +42,7 @@ date,value,source
 2015-02-27,0.4425,refinitiv:GB2YT=RR
 2015-03-02,0.571,refinitiv:GB2YT=RR
 2015-03-03,0.6015,refinitiv:GB2YT=RR
-2015-03-04,0.62898287,boe_curve:nominal:2
+2015-03-04,0.62898287,refinitiv:GB2YT=RR
 2015-03-05,0.5755,refinitiv:GB2YT=RR
 2015-03-06,0.619,refinitiv:GB2YT=RR
 2015-03-09,0.6195,refinitiv:GB2YT=RR
@@ -104,7 +104,7 @@ date,value,source
 2015-06-01,0.506,refinitiv:GB2YT=RR
 2015-06-02,0.563,refinitiv:GB2YT=RR
 2015-06-03,0.579,refinitiv:GB2YT=RR
-2015-06-04,0.60448896,boe_curve:nominal:2
+2015-06-04,0.60448896,refinitiv:GB2YT=RR
 2015-06-05,0.561,refinitiv:GB2YT=RR
 2015-06-08,0.536,refinitiv:GB2YT=RR
 2015-06-09,0.567,refinitiv:GB2YT=RR
@@ -276,7 +276,7 @@ date,value,source
 2016-02-02,0.3705,refinitiv:GB2YT=RR
 2016-02-03,0.3655,refinitiv:GB2YT=RR
 2016-02-04,0.3615,refinitiv:GB2YT=RR
-2016-02-05,0.3700911,boe_curve:nominal:2
+2016-02-05,0.3700911,refinitiv:GB2YT=RR
 2016-02-08,0.27,refinitiv:GB2YT=RR
 2016-02-09,0.3025,refinitiv:GB2YT=RR
 2016-02-10,0.3315,refinitiv:GB2YT=RR
@@ -507,7 +507,7 @@ date,value,source
 2016-12-30,0.047,refinitiv:GB2YT=RR
 2017-01-03,0.1235,refinitiv:GB2YT=RR
 2017-01-04,0.1405,refinitiv:GB2YT=RR
-2017-01-05,0.14211704,boe_curve:nominal:2
+2017-01-05,0.14211704,refinitiv:GB2YT=RR
 2017-01-06,0.202,refinitiv:GB2YT=RR
 2017-01-09,0.171,refinitiv:GB2YT=RR
 2017-01-10,0.2005,refinitiv:GB2YT=RR
@@ -526,7 +526,7 @@ date,value,source
 2017-01-27,0.1495,refinitiv:GB2YT=RR
 2017-01-30,0.137,refinitiv:GB2YT=RR
 2017-01-31,0.1215,refinitiv:GB2YT=RR
-2017-02-01,0.19668175,boe_curve:nominal:2
+2017-02-01,0.19668175,refinitiv:GB2YT=RR
 2017-02-02,0.109,refinitiv:GB2YT=RR
 2017-02-03,0.0965,refinitiv:GB2YT=RR
 2017-02-06,0.082,refinitiv:GB2YT=RR
@@ -759,7 +759,7 @@ date,value,source
 2017-12-29,0.429,refinitiv:GB2YT=RR
 2018-01-02,0.5025,refinitiv:GB2YT=RR
 2018-01-03,0.4655,refinitiv:GB2YT=RR
-2018-01-04,0.48635234,boe_curve:nominal:2
+2018-01-04,0.48635234,refinitiv:GB2YT=RR
 2018-01-05,0.4955,refinitiv:GB2YT=RR
 2018-01-08,0.5035,refinitiv:GB2YT=RR
 2018-01-09,0.5305,refinitiv:GB2YT=RR
@@ -885,7 +885,7 @@ date,value,source
 2018-07-02,0.697,refinitiv:GB2YT=RR
 2018-07-03,0.689,refinitiv:GB2YT=RR
 2018-07-04,0.7225,refinitiv:GB2YT=RR
-2018-07-05,0.68910479,boe_curve:nominal:2
+2018-07-05,0.68910479,refinitiv:GB2YT=RR
 2018-07-06,0.737,refinitiv:GB2YT=RR
 2018-07-09,0.71,refinitiv:GB2YT=RR
 2018-07-10,0.7475,refinitiv:GB2YT=RR
@@ -1116,7 +1116,7 @@ date,value,source
 2019-05-31,0.5965,refinitiv:GB2YT=RR
 2019-06-03,0.5665,refinitiv:GB2YT=RR
 2019-06-04,0.598,refinitiv:GB2YT=RR
-2019-06-05,0.54552114,boe_curve:nominal:2
+2019-06-05,0.54552114,refinitiv:GB2YT=RR
 2019-06-06,0.5335,refinitiv:GB2YT=RR
 2019-06-07,0.5245,refinitiv:GB2YT=RR
 2019-06-10,0.553,refinitiv:GB2YT=RR
@@ -1413,7 +1413,7 @@ date,value,source
 2020-07-31,-0.0805,refinitiv:GB2YT=RR
 2020-08-03,-0.0795,refinitiv:GB2YT=RR
 2020-08-04,-0.0825,refinitiv:GB2YT=RR
-2020-08-05,-0.073063019,boe_curve:nominal:2
+2020-08-05,-0.073063019,refinitiv:GB2YT=RR
 2020-08-06,-0.039,refinitiv:GB2YT=RR
 2020-08-07,-0.023,refinitiv:GB2YT=RR
 2020-08-10,-0.0355,refinitiv:GB2YT=RR
@@ -1499,7 +1499,7 @@ date,value,source
 2020-12-01,-0.013,refinitiv:GB2YT=RR
 2020-12-02,-0.027,refinitiv:GB2YT=RR
 2020-12-03,-0.0495,refinitiv:GB2YT=RR
-2020-12-04,-0.033058598,boe_curve:nominal:2
+2020-12-04,-0.033058598,refinitiv:GB2YT=RR
 2020-12-07,-0.0845,refinitiv:GB2YT=RR
 2020-12-08,-0.0875,refinitiv:GB2YT=RR
 2020-12-09,-0.086,refinitiv:GB2YT=RR
@@ -1540,7 +1540,7 @@ date,value,source
 2021-02-01,-0.1145,refinitiv:GB2YT=RR
 2021-02-02,-0.098,refinitiv:GB2YT=RR
 2021-02-03,-0.092,refinitiv:GB2YT=RR
-2021-02-04,-0.018522463,boe_curve:nominal:2
+2021-02-04,-0.018522463,refinitiv:GB2YT=RR
 2021-02-05,-0.0145,refinitiv:GB2YT=RR
 2021-02-08,-0.0415,refinitiv:GB2YT=RR
 2021-02-09,-0.042,refinitiv:GB2YT=RR
@@ -1561,7 +1561,7 @@ date,value,source
 2021-03-02,0.042,refinitiv:GB2YT=RR
 2021-03-03,0.075,refinitiv:GB2YT=RR
 2021-03-04,0.07,refinitiv:GB2YT=RR
-2021-03-05,0.071694023,boe_curve:nominal:2
+2021-03-05,0.071694023,refinitiv:GB2YT=RR
 2021-03-08,0.0895,refinitiv:GB2YT=RR
 2021-03-09,0.0765,refinitiv:GB2YT=RR
 2021-03-10,0.0595,refinitiv:GB2YT=RR
@@ -1600,7 +1600,7 @@ date,value,source
 2021-04-28,0.056,refinitiv:GB2YT=RR
 2021-04-29,0.0755,refinitiv:GB2YT=RR
 2021-04-30,0.0745,refinitiv:GB2YT=RR
-2021-05-04,0.042685499,boe_curve:nominal:2
+2021-05-04,0.042685499,refinitiv:GB2YT=RR
 2021-05-05,0.048,refinitiv:GB2YT=RR
 2021-05-06,0.033,refinitiv:GB2YT=RR
 2021-05-07,0.0255,refinitiv:GB2YT=RR
@@ -1810,7 +1810,7 @@ date,value,source
 2022-02-24,1.237,refinitiv:GB2YT=RR
 2022-02-25,1.198,refinitiv:GB2YT=RR
 2022-02-28,1.0355,refinitiv:GB2YT=RR
-2022-03-01,0.82269645,boe_curve:nominal:2
+2022-03-01,0.82269645,refinitiv:GB2YT=RR
 2022-03-02,1.055,refinitiv:GB2YT=RR
 2022-03-03,1.1165,refinitiv:GB2YT=RR
 2022-03-04,1.0435,refinitiv:GB2YT=RR
@@ -2022,7 +2022,7 @@ date,value,source
 2022-12-30,3.545,refinitiv:GB2YT=RR
 2023-01-03,3.545,refinitiv:GB2YT=RR
 2023-01-04,3.408,refinitiv:GB2YT=RR
-2023-01-05,3.5111181,boe_curve:nominal:2
+2023-01-05,3.5111181,refinitiv:GB2YT=RR
 2023-01-06,3.384,refinitiv:GB2YT=RR
 2023-01-09,3.4175,refinitiv:GB2YT=RR
 2023-01-10,3.445,refinitiv:GB2YT=RR
@@ -2041,7 +2041,7 @@ date,value,source
 2023-01-27,3.4475,refinitiv:GB2YT=RR
 2023-01-30,3.4405,refinitiv:GB2YT=RR
 2023-01-31,3.429,refinitiv:GB2YT=RR
-2023-02-01,3.2851359,boe_curve:nominal:2
+2023-02-01,3.2851359,refinitiv:GB2YT=RR
 2023-02-02,3.1305,refinitiv:GB2YT=RR
 2023-02-03,3.201,refinitiv:GB2YT=RR
 2023-02-06,3.416,refinitiv:GB2YT=RR
@@ -2145,7 +2145,7 @@ date,value,source
 2023-06-29,5.21,refinitiv:GB2YT=RR
 2023-06-30,5.2515,refinitiv:GB2YT=RR
 2023-07-03,5.3305,refinitiv:GB2YT=RR
-2023-07-04,5.2823984,boe_curve:nominal:2
+2023-07-04,5.2823984,refinitiv:GB2YT=RR
 2023-07-05,5.375,refinitiv:GB2YT=RR
 2023-07-06,5.495,refinitiv:GB2YT=RR
 2023-07-07,5.369,refinitiv:GB2YT=RR
@@ -2188,7 +2188,7 @@ date,value,source
 2023-08-30,5.2205,refinitiv:GB2YT=RR
 2023-08-31,5.1375,refinitiv:GB2YT=RR
 2023-09-01,5.1645,refinitiv:GB2YT=RR
-2023-09-04,4.8633956,boe_curve:nominal:2
+2023-09-04,4.8633956,refinitiv:GB2YT=RR
 2023-09-05,5.2565,refinitiv:GB2YT=RR
 2023-09-06,5.2215,refinitiv:GB2YT=RR
 2023-09-07,5.1225,refinitiv:GB2YT=RR
@@ -2210,7 +2210,7 @@ date,value,source
 2023-09-29,4.9,refinitiv:GB2YT=RR
 2023-10-02,4.975,refinitiv:GB2YT=RR
 2023-10-03,4.9765,refinitiv:GB2YT=RR
-2023-10-04,4.6703211,boe_curve:nominal:2
+2023-10-04,4.6703211,refinitiv:GB2YT=RR
 2023-10-05,4.8685,refinitiv:GB2YT=RR
 2023-10-06,4.873,refinitiv:GB2YT=RR
 2023-10-09,4.826,refinitiv:GB2YT=RR
@@ -2273,7 +2273,7 @@ date,value,source
 2023-12-29,3.963,refinitiv:GB2YT=RR
 2024-01-02,4.0355,refinitiv:GB2YT=RR
 2024-01-03,4.093,refinitiv:GB2YT=RR
-2024-01-04,3.9205939,boe_curve:nominal:2
+2024-01-04,3.9205939,refinitiv:GB2YT=RR
 2024-01-05,4.207,refinitiv:GB2YT=RR
 2024-01-08,4.193,refinitiv:GB2YT=RR
 2024-01-09,4.196,refinitiv:GB2YT=RR
@@ -2378,7 +2378,7 @@ date,value,source
 2024-05-31,4.4055,refinitiv:GB2YT=RR
 2024-06-03,4.3325,refinitiv:GB2YT=RR
 2024-06-04,4.3375,refinitiv:GB2YT=RR
-2024-06-05,4.4311559,boe_curve:nominal:2
+2024-06-05,4.4311559,refinitiv:GB2YT=RR
 2024-06-06,4.3045,refinitiv:GB2YT=RR
 2024-06-07,4.3615,refinitiv:GB2YT=RR
 2024-06-10,4.4005,refinitiv:GB2YT=RR

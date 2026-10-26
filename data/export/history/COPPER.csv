@@ -2240,7 +2240,7 @@ date,value,source
 2023-11-20,3.81,refinitiv:HGc1
 2023-11-21,3.8075,refinitiv:HGc1
 2023-11-22,3.774,refinitiv:HGc1
-2023-11-23,3.779,yahoo:HG=F
+2023-11-23,3.779,refinitiv:HGc1
 2023-11-24,3.78,refinitiv:HGc1
 2023-11-27,3.755,refinitiv:HGc1
 2023-11-28,3.7995,refinitiv:HGc1
@@ -2644,7 +2644,7 @@ date,value,source
 2025-07-01,5.0365,refinitiv:HGc1
 2025-07-02,5.154,refinitiv:HGc1
 2025-07-03,5.0845,refinitiv:HGc1
-2025-07-04,5.0184999,yahoo:HG=F
+2025-07-04,5.0184999,refinitiv:HGc1
 2025-07-07,4.97,refinitiv:HGc1
 2025-07-08,5.46,refinitiv:HGc1
 2025-07-09,5.507,refinitiv:HGc1

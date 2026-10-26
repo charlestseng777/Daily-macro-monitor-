@@ -2084,7 +2084,7 @@ date,value,source
 2023-07-11,-0.12,refinitiv:JP1YT=RR
 2023-07-12,-0.13,refinitiv:JP1YT=RR
 2023-07-13,-0.13,refinitiv:JP1YT=RR
-2023-07-14,-0.129,mof:1Y
+2023-07-14,-0.129,refinitiv:JP1YT=RR
 2023-07-18,-0.13,refinitiv:JP1YT=RR
 2023-07-19,-0.13,refinitiv:JP1YT=RR
 2023-07-20,-0.13,refinitiv:JP1YT=RR
@@ -2092,7 +2092,7 @@ date,value,source
 2023-07-24,-0.14,refinitiv:JP1YT=RR
 2023-07-25,-0.13,refinitiv:JP1YT=RR
 2023-07-26,-0.13,refinitiv:JP1YT=RR
-2023-07-27,-0.121,mof:1Y
+2023-07-27,-0.121,refinitiv:JP1YT=RR
 2023-07-28,-0.11,refinitiv:JP1YT=RR
 2023-07-31,-0.09,refinitiv:JP1YT=RR
 2023-08-01,-0.09,refinitiv:JP1YT=RR
@@ -2767,7 +2767,7 @@ date,value,source
 2026-04-28,1.11,refinitiv:JP1YT=RR
 2026-04-30,1.11,refinitiv:JP1YT=RR
 2026-05-01,1.1,refinitiv:JP1YT=RR
-2026-05-07,1.075,mof:1Y
+2026-05-07,1.075,refinitiv:JP1YT=RR
 2026-05-08,1.1,refinitiv:JP1YT=RR
 2026-05-11,1.11,refinitiv:JP1YT=RR
 2026-05-12,1.11,refinitiv:JP1YT=RR
@@ -2883,3 +2883,4 @@ date,value,source
 2026-10-21,1.694,refinitiv:JP1YT=RR
 2026-10-22,1.69,refinitiv:JP1YT=RR
 2026-10-23,1.657,refinitiv:JP1YT=RR
+2026-10-26,1.691,refinitiv:JP1YT=RR
