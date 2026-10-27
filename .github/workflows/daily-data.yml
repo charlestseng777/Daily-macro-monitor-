@@ -5,10 +5,14 @@ name: Macro dashboard data
 # so any environment can `python -m macrodash import` real data.
 on:
   schedule:
-    # 05:30 UK time on weekdays. Cron is UTC and ignores daylight saving, so
-    # one slot per season; the gate step lets only the right one through.
-    - cron: '30 4 * * 1-5'   # 05:30 BST
-    - cron: '30 5 * * 1-5'   # 05:30 GMT
+    # Target: 05:30 UK on weekdays. GitHub often starts scheduled runs late
+    # (hours late at busy times) and occasionally drops them, so there are
+    # several slots between ~05:00 and 08:00 UK. The gate lets the first one
+    # at or after 05:30 UK through and skips the rest once today's data is in.
+    # Minutes avoid :00/:30, when GitHub's scheduler is most congested; the
+    # UK (05:13) and Fed (05:18) dashboards go first as they share the
+    # Refinitiv account.
+    - cron: '3,33 4-8 * * 1-5'
   push:
     branches: ['main']
     paths: ['backend/**', 'config/**', 'web/**', '.github/workflows/daily-data.yml']
@@ -28,15 +32,22 @@ jobs:
     steps:
       - name: Gate on 05:30 UK
         id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-          offset=$(TZ=Europe/London date +%z)
-          slot="${{ github.event.schedule }}"
-          if { [ "$offset" = "+0100" ] && [ "$slot" = "30 4 * * 1-5" ]; } || \
-             { [ "$offset" = "+0000" ] && [ "$slot" = "30 5 * * 1-5" ]; }; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
+          now=$(TZ=Europe/London date +%H%M); dow=$(TZ=Europe/London date +%u)
+          if [ "$dow" -gt 5 ] || [ "$now" -lt 0530 ] || [ "$now" -ge 0900 ]; then
+            echo "Outside the 05:30-09:00 UK weekday window ($now)."; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          # Already refreshed today (a data commit since 05:00 UK)? Then skip.
+          since=$(date -u -d "@$(TZ=Europe/London date -d 'today 05:00' +%s)" +%Y-%m-%dT%H:%M:%SZ)
+          refreshed=$(gh api "repos/${{ github.repository }}/commits?sha=${{ github.ref_name }}&since=${since}&per_page=50" \
+                 --jq '[.[] | select(.commit.message | startswith("macro data:"))] | length')
+          if [ "${refreshed:-0}" -gt 0 ]; then
+            echo "Today's refresh already done."; echo "run=false" >> "$GITHUB_OUTPUT"
           else
-            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "run=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/checkout@v4

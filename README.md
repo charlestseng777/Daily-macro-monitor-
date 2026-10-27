@@ -107,7 +107,7 @@ python -m pytest -q                             # from backend/
 
 ### The website
 
-Each daily run also publishes the dashboard to GitHub Pages:
+Each morning (first successful run from 05:33 UK; GitHub often starts scheduled runs late, so there are retry slots up to 09:00) the run also publishes the dashboard to GitHub Pages:
 **https://charlestseng777.github.io/Daily-macro-monitor-/**
 (`python -m macrodash export-static` writes the snapshot and every chart
 series as files; the site is built with `VITE_STATIC=1`). On the hosted page,
