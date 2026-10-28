@@ -85,6 +85,9 @@ jobs:
           # Repository variable: set to true to sign out a Workspace session
           # left open overnight (Settings -> Secrets and variables -> Variables).
           MACRO_REFINITIV_TAKE_SESSION: ${{ vars.MACRO_REFINITIV_TAKE_SESSION || 'false' }}
+          # Runs started by a code push can happen during the working day; they
+          # use the free sources only and never touch the Refinitiv session.
+          MACRO_REFINITIV_DISABLED: ${{ github.event_name == 'push' && '1' || '' }}
           FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
           EIA_API_KEY: ${{ secrets.EIA_API_KEY }}
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
