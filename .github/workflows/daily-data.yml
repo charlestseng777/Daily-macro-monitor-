@@ -7,12 +7,12 @@ on:
   schedule:
     # Target: 05:30 UK on weekdays. GitHub often starts scheduled runs late
     # (hours late at busy times) and occasionally drops them, so there are
-    # several slots between ~05:00 and 08:00 UK. The gate lets the first one
+    # several slots until 08:30 UK. The gate lets the first one
     # at or after 05:30 UK through and skips the rest once today's data is in.
     # Minutes avoid :00/:30, when GitHub's scheduler is most congested; the
     # UK (05:13) and Fed (05:18) dashboards go first as they share the
     # Refinitiv account.
-    - cron: '3,33 4-8 * * 1-5'
+    - cron: '3,33 4-7 * * 1-5'
   push:
     branches: ['main']
     paths: ['backend/**', 'config/**', 'web/**', '.github/workflows/daily-data.yml']
@@ -37,8 +37,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" != "schedule" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
           now=$(TZ=Europe/London date +%H%M); dow=$(TZ=Europe/London date +%u)
-          if [ "$dow" -gt 5 ] || [ "$now" -lt 0530 ] || [ "$now" -ge 0900 ]; then
-            echo "Outside the 05:30-09:00 UK weekday window ($now)."; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
+          if [ "$dow" -gt 5 ] || [ "$now" -lt 0530 ] || [ "$now" -ge 0830 ]; then
+            echo "Outside the 05:30-08:30 UK weekday window ($now)."; echo "run=false" >> "$GITHUB_OUTPUT"; exit 0
           fi
           # Already refreshed today (a data commit since 05:00 UK)? Then skip.
           since=$(date -u -d "@$(TZ=Europe/London date -d 'today 05:00' +%s)" +%Y-%m-%dT%H:%M:%SZ)
