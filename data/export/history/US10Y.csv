@@ -725,7 +725,7 @@ date,value,source
 2017-11-20,2.37,treasury:10 Yr
 2017-11-21,2.36,treasury:10 Yr
 2017-11-22,2.32,treasury:10 Yr
-2017-11-23,2.3196,refinitiv:US10YT=RR
+2017-11-23,2.3196,treasury:10 Yr
 2017-11-24,2.34,treasury:10 Yr
 2017-11-27,2.32,treasury:10 Yr
 2017-11-28,2.34,treasury:10 Yr
@@ -852,7 +852,7 @@ date,value,source
 2018-05-23,3.01,treasury:10 Yr
 2018-05-24,2.98,treasury:10 Yr
 2018-05-25,2.93,treasury:10 Yr
-2018-05-28,2.9304,refinitiv:US10YT=RR
+2018-05-28,2.9304,treasury:10 Yr
 2018-05-29,2.77,treasury:10 Yr
 2018-05-30,2.84,treasury:10 Yr
 2018-05-31,2.83,treasury:10 Yr
@@ -879,7 +879,7 @@ date,value,source
 2018-06-29,2.85,treasury:10 Yr
 2018-07-02,2.87,treasury:10 Yr
 2018-07-03,2.83,treasury:10 Yr
-2018-07-04,2.8318,refinitiv:US10YT=RR
+2018-07-04,2.8318,treasury:10 Yr
 2018-07-05,2.84,treasury:10 Yr
 2018-07-06,2.82,treasury:10 Yr
 2018-07-09,2.86,treasury:10 Yr
@@ -946,7 +946,7 @@ date,value,source
 2018-10-03,3.15,treasury:10 Yr
 2018-10-04,3.19,treasury:10 Yr
 2018-10-05,3.23,treasury:10 Yr
-2018-10-08,3.2309,refinitiv:US10YT=RR
+2018-10-08,3.2309,treasury:10 Yr
 2018-10-09,3.21,treasury:10 Yr
 2018-10-10,3.22,treasury:10 Yr
 2018-10-11,3.14,treasury:10 Yr
@@ -1016,7 +1016,7 @@ date,value,source
 2019-01-16,2.73,treasury:10 Yr
 2019-01-17,2.75,treasury:10 Yr
 2019-01-18,2.79,treasury:10 Yr
-2019-01-21,2.7869,refinitiv:US10YT=RR
+2019-01-21,2.7869,treasury:10 Yr
 2019-01-22,2.74,treasury:10 Yr
 2019-01-23,2.76,treasury:10 Yr
 2019-01-24,2.72,treasury:10 Yr
@@ -1201,7 +1201,7 @@ date,value,source
 2019-10-09,1.59,treasury:10 Yr
 2019-10-10,1.67,treasury:10 Yr
 2019-10-11,1.76,treasury:10 Yr
-2019-10-14,1.73335,refinitiv:US10YT=RR
+2019-10-14,1.73335,treasury:10 Yr
 2019-10-15,1.77,treasury:10 Yr
 2019-10-16,1.75,treasury:10 Yr
 2019-10-17,1.76,treasury:10 Yr
@@ -1221,7 +1221,7 @@ date,value,source
 2019-11-06,1.81,treasury:10 Yr
 2019-11-07,1.92,treasury:10 Yr
 2019-11-08,1.94,treasury:10 Yr
-2019-11-11,1.94425,refinitiv:US10YT=RR
+2019-11-11,1.94425,treasury:10 Yr
 2019-11-12,1.92,treasury:10 Yr
 2019-11-13,1.88,treasury:10 Yr
 2019-11-14,1.82,treasury:10 Yr
@@ -2964,3 +2964,4 @@ date,value,source
 2026-10-27,4.99,treasury:10 Yr
 2026-10-28,5.05,treasury:10 Yr
 2026-10-29,4.98,treasury:10 Yr
+2026-10-30,4.94,treasury:10 Yr

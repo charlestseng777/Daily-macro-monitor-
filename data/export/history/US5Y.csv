@@ -725,7 +725,7 @@ date,value,source
 2017-11-20,2.09,treasury:5 Yr
 2017-11-21,2.11,treasury:5 Yr
 2017-11-22,2.05,treasury:5 Yr
-2017-11-23,2.04255,refinitiv:US5YT=RR
+2017-11-23,2.04255,treasury:5 Yr
 2017-11-24,2.07,treasury:5 Yr
 2017-11-27,2.06,treasury:5 Yr
 2017-11-28,2.07,treasury:5 Yr
@@ -852,7 +852,7 @@ date,value,source
 2018-05-23,2.83,treasury:5 Yr
 2018-05-24,2.82,treasury:5 Yr
 2018-05-25,2.76,treasury:5 Yr
-2018-05-28,2.76265,refinitiv:US5YT=RR
+2018-05-28,2.76265,treasury:5 Yr
 2018-05-29,2.58,treasury:5 Yr
 2018-05-30,2.67,treasury:5 Yr
 2018-05-31,2.68,treasury:5 Yr
@@ -879,7 +879,7 @@ date,value,source
 2018-06-29,2.73,treasury:5 Yr
 2018-07-02,2.75,treasury:5 Yr
 2018-07-03,2.72,treasury:5 Yr
-2018-07-04,2.7219,refinitiv:US5YT=RR
+2018-07-04,2.7219,treasury:5 Yr
 2018-07-05,2.74,treasury:5 Yr
 2018-07-06,2.71,treasury:5 Yr
 2018-07-09,2.75,treasury:5 Yr
@@ -946,7 +946,7 @@ date,value,source
 2018-10-03,3.02,treasury:5 Yr
 2018-10-04,3.05,treasury:5 Yr
 2018-10-05,3.07,treasury:5 Yr
-2018-10-08,3.07185,refinitiv:US5YT=RR
+2018-10-08,3.07185,treasury:5 Yr
 2018-10-09,3.05,treasury:5 Yr
 2018-10-10,3.05,treasury:5 Yr
 2018-10-11,3,treasury:5 Yr
@@ -1016,7 +1016,7 @@ date,value,source
 2019-01-16,2.54,treasury:5 Yr
 2019-01-17,2.58,treasury:5 Yr
 2019-01-18,2.62,treasury:5 Yr
-2019-01-21,2.62395,refinitiv:US5YT=RR
+2019-01-21,2.62395,treasury:5 Yr
 2019-01-22,2.57,treasury:5 Yr
 2019-01-23,2.59,treasury:5 Yr
 2019-01-24,2.55,treasury:5 Yr
@@ -1201,7 +1201,7 @@ date,value,source
 2019-10-09,1.4,treasury:5 Yr
 2019-10-10,1.48,treasury:5 Yr
 2019-10-11,1.59,treasury:5 Yr
-2019-10-14,1.55415,refinitiv:US5YT=RR
+2019-10-14,1.55415,treasury:5 Yr
 2019-10-15,1.59,treasury:5 Yr
 2019-10-16,1.57,treasury:5 Yr
 2019-10-17,1.57,treasury:5 Yr
@@ -1221,7 +1221,7 @@ date,value,source
 2019-11-06,1.63,treasury:5 Yr
 2019-11-07,1.74,treasury:5 Yr
 2019-11-08,1.74,treasury:5 Yr
-2019-11-11,1.7498,refinitiv:US5YT=RR
+2019-11-11,1.7498,treasury:5 Yr
 2019-11-12,1.73,treasury:5 Yr
 2019-11-13,1.69,treasury:5 Yr
 2019-11-14,1.63,treasury:5 Yr
@@ -2964,3 +2964,4 @@ date,value,source
 2026-10-27,4.82,treasury:5 Yr
 2026-10-28,4.85,treasury:5 Yr
 2026-10-29,4.78,treasury:5 Yr
+2026-10-30,4.71,treasury:5 Yr
