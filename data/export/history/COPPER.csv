@@ -98,7 +98,7 @@ date,value,source
 2015-05-20,2.853,refinitiv:HGc1
 2015-05-21,2.8715,refinitiv:HGc1
 2015-05-22,2.815,refinitiv:HGc1
-2015-05-25,2.8534999,yahoo:HG=F
+2015-05-25,2.8534999,refinitiv:HGc1
 2015-05-26,2.8435,refinitiv:HGc1
 2015-05-27,2.8105,refinitiv:HGc1
 2015-05-28,2.795,refinitiv:HGc1
@@ -172,7 +172,7 @@ date,value,source
 2015-09-02,2.3325,refinitiv:HGc1
 2015-09-03,2.381,refinitiv:HGc1
 2015-09-04,2.329,refinitiv:HGc1
-2015-09-07,2.4384999,yahoo:HG=F
+2015-09-07,2.4384999,refinitiv:HGc1
 2015-09-08,2.4345,refinitiv:HGc1
 2015-09-09,2.43,refinitiv:HGc1
 2015-09-10,2.4595,refinitiv:HGc1
@@ -356,7 +356,7 @@ date,value,source
 2016-05-25,2.1095,refinitiv:HGc1
 2016-05-26,2.1055,refinitiv:HGc1
 2016-05-27,2.1115,refinitiv:HGc1
-2016-05-30,2.0975001,yahoo:HG=F
+2016-05-30,2.0975001,refinitiv:HGc1
 2016-05-31,2.0895,refinitiv:HGc1
 2016-06-01,2.074,refinitiv:HGc1
 2016-06-02,2.0695,refinitiv:HGc1
@@ -381,7 +381,7 @@ date,value,source
 2016-06-29,2.192,refinitiv:HGc1
 2016-06-30,2.2005,refinitiv:HGc1
 2016-07-01,2.2195,refinitiv:HGc1
-2016-07-04,2.1815,yahoo:HG=F
+2016-07-04,2.1815,refinitiv:HGc1
 2016-07-05,2.183,refinitiv:HGc1
 2016-07-06,2.155,refinitiv:HGc1
 2016-07-07,2.1225,refinitiv:HGc1
@@ -426,7 +426,7 @@ date,value,source
 2016-08-31,2.0705,refinitiv:HGc1
 2016-09-01,2.074,refinitiv:HGc1
 2016-09-02,2.0705,refinitiv:HGc1
-2016-09-05,2.0840001,yahoo:HG=F
+2016-09-05,2.0840001,refinitiv:HGc1
 2016-09-06,2.09,refinitiv:HGc1
 2016-09-07,2.0945,refinitiv:HGc1
 2016-09-08,2.0965,refinitiv:HGc1
@@ -610,7 +610,7 @@ date,value,source
 2017-05-24,2.567,refinitiv:HGc1
 2017-05-25,2.59,refinitiv:HGc1
 2017-05-26,2.56,refinitiv:HGc1
-2017-05-29,2.5610001,yahoo:HG=F
+2017-05-29,2.5610001,refinitiv:HGc1
 2017-05-30,2.5625,refinitiv:HGc1
 2017-05-31,2.581,refinitiv:HGc1
 2017-06-01,2.583,refinitiv:HGc1
@@ -636,7 +636,7 @@ date,value,source
 2017-06-29,2.6815,refinitiv:HGc1
 2017-06-30,2.696,refinitiv:HGc1
 2017-07-03,2.6785,refinitiv:HGc1
-2017-07-04,2.6489999,yahoo:HG=F
+2017-07-04,2.6489999,refinitiv:HGc1
 2017-07-05,2.647,refinitiv:HGc1
 2017-07-06,2.6505,refinitiv:HGc1
 2017-07-07,2.6395,refinitiv:HGc1
@@ -680,7 +680,7 @@ date,value,source
 2017-08-30,3.064,refinitiv:HGc1
 2017-08-31,3.0815,refinitiv:HGc1
 2017-09-01,3.0985,refinitiv:HGc1
-2017-09-04,3.1075001,yahoo:HG=F
+2017-09-04,3.1075001,refinitiv:HGc1
 2017-09-05,3.106,refinitiv:HGc1
 2017-09-06,3.1385,refinitiv:HGc1
 2017-09-07,3.129,refinitiv:HGc1
@@ -864,7 +864,7 @@ date,value,source
 2018-05-23,3.0615,refinitiv:HGc1
 2018-05-24,3.09,refinitiv:HGc1
 2018-05-25,3.066,refinitiv:HGc1
-2018-05-28,3.052,yahoo:HG=F
+2018-05-28,3.052,refinitiv:HGc1
 2018-05-29,3.06,refinitiv:HGc1
 2018-05-30,3.056,refinitiv:HGc1
 2018-05-31,3.057,refinitiv:HGc1
@@ -891,7 +891,7 @@ date,value,source
 2018-06-29,2.955,refinitiv:HGc1
 2018-07-02,2.931,refinitiv:HGc1
 2018-07-03,2.9055,refinitiv:HGc1
-2018-07-04,2.8139999,yahoo:HG=F
+2018-07-04,2.8139999,refinitiv:HGc1
 2018-07-05,2.818,refinitiv:HGc1
 2018-07-06,2.8075,refinitiv:HGc1
 2018-07-09,2.8555,refinitiv:HGc1
@@ -934,7 +934,7 @@ date,value,source
 2018-08-29,2.7085,refinitiv:HGc1
 2018-08-30,2.6725,refinitiv:HGc1
 2018-08-31,2.6425,refinitiv:HGc1
-2018-09-03,2.5834999,yahoo:HG=F
+2018-09-03,2.5834999,refinitiv:HGc1
 2018-09-04,2.5835,refinitiv:HGc1
 2018-09-05,2.602,refinitiv:HGc1
 2018-09-06,2.6155,refinitiv:HGc1
@@ -1118,7 +1118,7 @@ date,value,source
 2019-05-22,2.6795,refinitiv:HGc1
 2019-05-23,2.6905,refinitiv:HGc1
 2019-05-24,2.7075,refinitiv:HGc1
-2019-05-27,2.7035,yahoo:HG=F
+2019-05-27,2.7035,refinitiv:HGc1
 2019-05-28,2.701,refinitiv:HGc1
 2019-05-29,2.67,refinitiv:HGc1
 2019-05-30,2.657,refinitiv:HGc1
@@ -1146,7 +1146,7 @@ date,value,source
 2019-07-01,2.6775,refinitiv:HGc1
 2019-07-02,2.6575,refinitiv:HGc1
 2019-07-03,2.6815,refinitiv:HGc1
-2019-07-04,2.6585,yahoo:HG=F
+2019-07-04,2.6585,refinitiv:HGc1
 2019-07-05,2.663,refinitiv:HGc1
 2019-07-08,2.6555,refinitiv:HGc1
 2019-07-09,2.6275,refinitiv:HGc1
@@ -1188,7 +1188,7 @@ date,value,source
 2019-08-28,2.5505,refinitiv:HGc1
 2019-08-29,2.555,refinitiv:HGc1
 2019-08-30,2.5365,refinitiv:HGc1
-2019-09-02,2.5125,yahoo:HG=F
+2019-09-02,2.5125,refinitiv:HGc1
 2019-09-03,2.5155,refinitiv:HGc1
 2019-09-04,2.575,refinitiv:HGc1
 2019-09-05,2.6145,refinitiv:HGc1
@@ -1372,7 +1372,7 @@ date,value,source
 2020-05-20,2.467,refinitiv:HGc1
 2020-05-21,2.454,refinitiv:HGc1
 2020-05-22,2.413,refinitiv:HGc1
-2020-05-25,2.4384999,yahoo:HG=F
+2020-05-25,2.4384999,refinitiv:HGc1
 2020-05-26,2.428,refinitiv:HGc1
 2020-05-27,2.3755,refinitiv:HGc1
 2020-05-28,2.421,refinitiv:HGc1
@@ -1446,7 +1446,7 @@ date,value,source
 2020-09-02,3.0125,refinitiv:HGc1
 2020-09-03,2.962,refinitiv:HGc1
 2020-09-04,3.06,refinitiv:HGc1
-2020-09-07,3.0125,yahoo:HG=F
+2020-09-07,3.0125,refinitiv:HGc1
 2020-09-08,3.006,refinitiv:HGc1
 2020-09-09,3.0435,refinitiv:HGc1
 2020-09-10,2.9625,refinitiv:HGc1
@@ -1630,7 +1630,7 @@ date,value,source
 2021-05-26,4.547,refinitiv:HGc1
 2021-05-27,4.6745,refinitiv:HGc1
 2021-05-28,4.6735,refinitiv:HGc1
-2021-05-31,4.6620002,yahoo:HG=F
+2021-05-31,4.6620002,refinitiv:HGc1
 2021-06-01,4.6575,refinitiv:HGc1
 2021-06-02,4.6225,refinitiv:HGc1
 2021-06-03,4.472,refinitiv:HGc1
@@ -1655,7 +1655,7 @@ date,value,source
 2021-06-30,4.2975,refinitiv:HGc1
 2021-07-01,4.2475,refinitiv:HGc1
 2021-07-02,4.2895,refinitiv:HGc1
-2021-07-05,4.2579999,yahoo:HG=F
+2021-07-05,4.2579999,refinitiv:HGc1
 2021-07-06,4.2675,refinitiv:HGc1
 2021-07-07,4.317,refinitiv:HGc1
 2021-07-08,4.2705,refinitiv:HGc1
@@ -1700,7 +1700,7 @@ date,value,source
 2021-09-01,4.2655,refinitiv:HGc1
 2021-09-02,4.2815,refinitiv:HGc1
 2021-09-03,4.3275,refinitiv:HGc1
-2021-09-06,4.2775002,yahoo:HG=F
+2021-09-06,4.2775002,refinitiv:HGc1
 2021-09-07,4.2705,refinitiv:HGc1
 2021-09-08,4.231,refinitiv:HGc1
 2021-09-09,4.28,refinitiv:HGc1
@@ -1885,7 +1885,7 @@ date,value,source
 2022-05-25,4.27,refinitiv:HGc1
 2022-05-26,4.2575,refinitiv:HGc1
 2022-05-27,4.321,refinitiv:HGc1
-2022-05-30,4.2950001,yahoo:HG=F
+2022-05-30,4.2950001,refinitiv:HGc1
 2022-05-31,4.293,refinitiv:HGc1
 2022-06-01,4.3275,refinitiv:HGc1
 2022-06-02,4.5465,refinitiv:HGc1
@@ -1900,7 +1900,7 @@ date,value,source
 2022-06-15,4.153,refinitiv:HGc1
 2022-06-16,4.1135,refinitiv:HGc1
 2022-06-17,4.022,refinitiv:HGc1
-2022-06-20,4.0430002,yahoo:HG=F
+2022-06-20,4.0430002,refinitiv:HGc1
 2022-06-21,4.0355,refinitiv:HGc1
 2022-06-22,3.9535,refinitiv:HGc1
 2022-06-23,3.767,refinitiv:HGc1
@@ -1910,7 +1910,7 @@ date,value,source
 2022-06-29,3.7655,refinitiv:HGc1
 2022-06-30,3.686,refinitiv:HGc1
 2022-07-01,3.638,refinitiv:HGc1
-2022-07-04,3.425,yahoo:HG=F
+2022-07-04,3.425,refinitiv:HGc1
 2022-07-05,3.449,refinitiv:HGc1
 2022-07-06,3.4445,refinitiv:HGc1
 2022-07-07,3.5555,refinitiv:HGc1
@@ -1955,7 +1955,7 @@ date,value,source
 2022-08-31,3.5145,refinitiv:HGc1
 2022-09-01,3.4165,refinitiv:HGc1
 2022-09-02,3.4135,refinitiv:HGc1
-2022-09-05,3.4690001,yahoo:HG=F
+2022-09-05,3.4690001,refinitiv:HGc1
 2022-09-06,3.4645,refinitiv:HGc1
 2022-09-07,3.446,refinitiv:HGc1
 2022-09-08,3.5575,refinitiv:HGc1
@@ -2139,7 +2139,7 @@ date,value,source
 2023-05-24,3.5505,refinitiv:HGc1
 2023-05-25,3.5845,refinitiv:HGc1
 2023-05-26,3.6515,refinitiv:HGc1
-2023-05-29,3.658,yahoo:HG=F
+2023-05-29,3.658,refinitiv:HGc1
 2023-05-30,3.658,refinitiv:HGc1
 2023-05-31,3.66,refinitiv:HGc1
 2023-06-01,3.7115,refinitiv:HGc1
@@ -2154,7 +2154,7 @@ date,value,source
 2023-06-14,3.842,refinitiv:HGc1
 2023-06-15,3.814,refinitiv:HGc1
 2023-06-16,3.8785,refinitiv:HGc1
-2023-06-19,3.8785,yahoo:HG=F
+2023-06-19,3.8785,refinitiv:HGc1
 2023-06-20,3.88,refinitiv:HGc1
 2023-06-21,3.91,refinitiv:HGc1
 2023-06-22,3.887,refinitiv:HGc1
@@ -2165,7 +2165,7 @@ date,value,source
 2023-06-29,3.6795,refinitiv:HGc1
 2023-06-30,3.744,refinitiv:HGc1
 2023-07-03,3.776,refinitiv:HGc1
-2023-07-04,3.7535,yahoo:HG=F
+2023-07-04,3.7535,refinitiv:HGc1
 2023-07-05,3.744,refinitiv:HGc1
 2023-07-06,3.729,refinitiv:HGc1
 2023-07-07,3.7645,refinitiv:HGc1
@@ -2209,7 +2209,7 @@ date,value,source
 2023-08-30,3.7855,refinitiv:HGc1
 2023-08-31,3.7925,refinitiv:HGc1
 2023-09-01,3.8115,refinitiv:HGc1
-2023-09-04,3.8110001,yahoo:HG=F
+2023-09-04,3.8110001,refinitiv:HGc1
 2023-09-05,3.804,refinitiv:HGc1
 2023-09-06,3.752,refinitiv:HGc1
 2023-09-07,3.725,refinitiv:HGc1
@@ -2267,7 +2267,7 @@ date,value,source
 2023-11-20,3.81,refinitiv:HGc1
 2023-11-21,3.8075,refinitiv:HGc1
 2023-11-22,3.774,refinitiv:HGc1
-2023-11-23,3.779,yahoo:HG=F
+2023-11-23,3.779,refinitiv:HGc1
 2023-11-24,3.78,refinitiv:HGc1
 2023-11-27,3.755,refinitiv:HGc1
 2023-11-28,3.7995,refinitiv:HGc1
@@ -2394,7 +2394,7 @@ date,value,source
 2024-05-22,4.839,refinitiv:HGc1
 2024-05-23,4.8035,refinitiv:HGc1
 2024-05-24,4.7835,refinitiv:HGc1
-2024-05-27,4.8755002,yahoo:HG=F
+2024-05-27,4.8755002,refinitiv:HGc1
 2024-05-28,4.881,refinitiv:HGc1
 2024-05-29,4.8005,refinitiv:HGc1
 2024-05-30,4.674,refinitiv:HGc1
@@ -2411,7 +2411,7 @@ date,value,source
 2024-06-14,4.551,refinitiv:HGc1
 2024-06-17,4.5165,refinitiv:HGc1
 2024-06-18,4.533,refinitiv:HGc1
-2024-06-19,4.618,yahoo:HG=F
+2024-06-19,4.618,refinitiv:HGc1
 2024-06-20,4.592,refinitiv:HGc1
 2024-06-21,4.489,refinitiv:HGc1
 2024-06-24,4.5175,refinitiv:HGc1
@@ -2422,7 +2422,7 @@ date,value,source
 2024-07-01,4.426,refinitiv:HGc1
 2024-07-02,4.437,refinitiv:HGc1
 2024-07-03,4.5355,refinitiv:HGc1
-2024-07-04,4.6585002,yahoo:HG=F
+2024-07-04,4.6585002,refinitiv:HGc1
 2024-07-05,4.6715,refinitiv:HGc1
 2024-07-08,4.6085,refinitiv:HGc1
 2024-07-09,4.587,refinitiv:HGc1
@@ -2464,7 +2464,7 @@ date,value,source
 2024-08-28,4.145,refinitiv:HGc1
 2024-08-29,4.136,refinitiv:HGc1
 2024-08-30,4.1535,refinitiv:HGc1
-2024-09-02,4.0320001,yahoo:HG=F
+2024-09-02,4.0320001,refinitiv:HGc1
 2024-09-03,4.029,refinitiv:HGc1
 2024-09-04,4.027,refinitiv:HGc1
 2024-09-05,4.077,refinitiv:HGc1
@@ -2648,7 +2648,7 @@ date,value,source
 2025-05-21,4.63,refinitiv:HGc1
 2025-05-22,4.6475,refinitiv:HGc1
 2025-05-23,4.8325,refinitiv:HGc1
-2025-05-26,4.71,yahoo:HG=F
+2025-05-26,4.71,refinitiv:HGc1
 2025-05-27,4.7135,refinitiv:HGc1
 2025-05-28,4.6425,refinitiv:HGc1
 2025-05-29,4.646,refinitiv:HGc1
@@ -2666,7 +2666,7 @@ date,value,source
 2025-06-16,4.821,refinitiv:HGc1
 2025-06-17,4.785,refinitiv:HGc1
 2025-06-18,4.843,refinitiv:HGc1
-2025-06-19,4.8260002,yahoo:HG=F
+2025-06-19,4.8260002,refinitiv:HGc1
 2025-06-20,4.8295,refinitiv:HGc1
 2025-06-23,4.9075,refinitiv:HGc1
 2025-06-24,4.8665,refinitiv:HGc1
@@ -2677,7 +2677,7 @@ date,value,source
 2025-07-01,5.0365,refinitiv:HGc1
 2025-07-02,5.154,refinitiv:HGc1
 2025-07-03,5.0845,refinitiv:HGc1
-2025-07-04,5.0184999,yahoo:HG=F
+2025-07-04,5.0184999,refinitiv:HGc1
 2025-07-07,4.97,refinitiv:HGc1
 2025-07-08,5.46,refinitiv:HGc1
 2025-07-09,5.507,refinitiv:HGc1
@@ -2718,7 +2718,7 @@ date,value,source
 2025-08-27,4.4145,refinitiv:HGc1
 2025-08-28,4.4715,refinitiv:HGc1
 2025-08-29,4.512,refinitiv:HGc1
-2025-09-01,4.5695,yahoo:HG=F
+2025-09-01,4.5695,refinitiv:HGc1
 2025-09-02,4.57,refinitiv:HGc1
 2025-09-03,4.5455,refinitiv:HGc1
 2025-09-04,4.495,refinitiv:HGc1
@@ -2903,7 +2903,7 @@ date,value,source
 2026-05-20,6.3015,refinitiv:HGc1
 2026-05-21,6.259,refinitiv:HGc1
 2026-05-22,6.345,refinitiv:HGc1
-2026-05-25,6.3610001,yahoo:HG=F
+2026-05-25,6.3610001,refinitiv:HGc1
 2026-05-26,6.391,refinitiv:HGc1
 2026-05-27,6.4175,refinitiv:HGc1
 2026-05-28,6.39,refinitiv:HGc1
@@ -2976,7 +2976,7 @@ date,value,source
 2026-09-02,6.512,refinitiv:HGc1
 2026-09-03,6.577,refinitiv:HGc1
 2026-09-04,6.5805,refinitiv:HGc1
-2026-09-07,6.7389998,yahoo:HG=F
+2026-09-07,6.7389998,refinitiv:HGc1
 2026-09-08,6.7395,refinitiv:HGc1
 2026-09-09,6.776,refinitiv:HGc1
 2026-09-10,6.4415,refinitiv:HGc1
@@ -3017,3 +3017,4 @@ date,value,source
 2026-10-29,6.5775,refinitiv:HGc1
 2026-10-30,6.4475,refinitiv:HGc1
 2026-11-02,6.515,refinitiv:HGc1
+2026-11-03,6.3805,refinitiv:HGc1

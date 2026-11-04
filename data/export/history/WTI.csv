@@ -98,7 +98,7 @@ date,value,source
 2015-05-20,58.76,refinitiv:CLc1
 2015-05-21,60.69,refinitiv:CLc1
 2015-05-22,59.99,refinitiv:CLc1
-2015-05-25,58.029999,yahoo:CL=F
+2015-05-25,58.029999,refinitiv:CLc1
 2015-05-26,58.35,refinitiv:CLc1
 2015-05-27,57.65,refinitiv:CLc1
 2015-05-28,57.97,refinitiv:CLc1
@@ -172,7 +172,7 @@ date,value,source
 2015-09-02,46.05,refinitiv:CLc1
 2015-09-03,46.69,refinitiv:CLc1
 2015-09-04,45.77,refinitiv:CLc1
-2015-09-07,45.939999,yahoo:CL=F
+2015-09-07,45.939999,refinitiv:CLc1
 2015-09-08,45.73,refinitiv:CLc1
 2015-09-09,44.11,refinitiv:CLc1
 2015-09-10,45.73,refinitiv:CLc1
@@ -356,7 +356,7 @@ date,value,source
 2016-05-25,49.74,refinitiv:CLc1
 2016-05-26,49.4,refinitiv:CLc1
 2016-05-27,49.56,refinitiv:CLc1
-2016-05-30,49.099998,yahoo:CL=F
+2016-05-30,49.099998,refinitiv:CLc1
 2016-05-31,48.83,refinitiv:CLc1
 2016-06-01,48.91,refinitiv:CLc1
 2016-06-02,49.06,refinitiv:CLc1
@@ -381,7 +381,7 @@ date,value,source
 2016-06-29,49.54,refinitiv:CLc1
 2016-06-30,48.4,refinitiv:CLc1
 2016-07-01,49.28,refinitiv:CLc1
-2016-07-04,46.599998,yahoo:CL=F
+2016-07-04,46.599998,refinitiv:CLc1
 2016-07-05,46.86,refinitiv:CLc1
 2016-07-06,47.89,refinitiv:CLc1
 2016-07-07,45.19,refinitiv:CLc1
@@ -426,7 +426,7 @@ date,value,source
 2016-08-31,44.86,refinitiv:CLc1
 2016-09-01,43.53,refinitiv:CLc1
 2016-09-02,44.2,refinitiv:CLc1
-2016-09-05,44.830002,yahoo:CL=F
+2016-09-05,44.830002,refinitiv:CLc1
 2016-09-06,44.88,refinitiv:CLc1
 2016-09-07,46.14,refinitiv:CLc1
 2016-09-08,47.32,refinitiv:CLc1
@@ -610,7 +610,7 @@ date,value,source
 2017-05-24,51.3,refinitiv:CLc1
 2017-05-25,48.71,refinitiv:CLc1
 2017-05-26,49.87,refinitiv:CLc1
-2017-05-29,49.66,yahoo:CL=F
+2017-05-29,49.66,refinitiv:CLc1
 2017-05-30,49.65,refinitiv:CLc1
 2017-05-31,48.63,refinitiv:CLc1
 2017-06-01,48.03,refinitiv:CLc1
@@ -636,7 +636,7 @@ date,value,source
 2017-06-29,44.87,refinitiv:CLc1
 2017-06-30,46.33,refinitiv:CLc1
 2017-07-03,47.05,refinitiv:CLc1
-2017-07-04,45.130001,yahoo:CL=F
+2017-07-04,45.130001,refinitiv:CLc1
 2017-07-05,45.61,refinitiv:CLc1
 2017-07-06,45.33,refinitiv:CLc1
 2017-07-07,44.33,refinitiv:CLc1
@@ -680,7 +680,7 @@ date,value,source
 2017-08-30,45.97,refinitiv:CLc1
 2017-08-31,47.09,refinitiv:CLc1
 2017-09-01,47.35,refinitiv:CLc1
-2017-09-04,48.66,yahoo:CL=F
+2017-09-04,48.66,refinitiv:CLc1
 2017-09-05,48.62,refinitiv:CLc1
 2017-09-06,49.15,refinitiv:CLc1
 2017-09-07,49.11,refinitiv:CLc1
@@ -864,7 +864,7 @@ date,value,source
 2018-05-23,71.83,refinitiv:CLc1
 2018-05-24,70.67,refinitiv:CLc1
 2018-05-25,67.5,refinitiv:CLc1
-2018-05-28,66.730003,yahoo:CL=F
+2018-05-28,66.730003,refinitiv:CLc1
 2018-05-29,66.87,refinitiv:CLc1
 2018-05-30,68.23,refinitiv:CLc1
 2018-05-31,67.1,refinitiv:CLc1
@@ -891,7 +891,7 @@ date,value,source
 2018-06-29,74.25,refinitiv:CLc1
 2018-07-02,74.06,refinitiv:CLc1
 2018-07-03,74.28,refinitiv:CLc1
-2018-07-04,72.940002,yahoo:CL=F
+2018-07-04,72.940002,refinitiv:CLc1
 2018-07-05,73.12,refinitiv:CLc1
 2018-07-06,73.92,refinitiv:CLc1
 2018-07-09,74.01,refinitiv:CLc1
@@ -934,7 +934,7 @@ date,value,source
 2018-08-29,69.7,refinitiv:CLc1
 2018-08-30,70.05,refinitiv:CLc1
 2018-08-31,69.88,refinitiv:CLc1
-2018-09-03,69.870003,yahoo:CL=F
+2018-09-03,69.870003,refinitiv:CLc1
 2018-09-04,69.37,refinitiv:CLc1
 2018-09-05,68.64,refinitiv:CLc1
 2018-09-06,67.89,refinitiv:CLc1
@@ -1118,7 +1118,7 @@ date,value,source
 2019-05-22,61.32,refinitiv:CLc1
 2019-05-23,58.19,refinitiv:CLc1
 2019-05-24,59.02,refinitiv:CLc1
-2019-05-27,59.139999,yahoo:CL=F
+2019-05-27,59.139999,refinitiv:CLc1
 2019-05-28,59.06,refinitiv:CLc1
 2019-05-29,59.06,refinitiv:CLc1
 2019-05-30,56.41,refinitiv:CLc1
@@ -1146,7 +1146,7 @@ date,value,source
 2019-07-01,59.19,refinitiv:CLc1
 2019-07-02,56.32,refinitiv:CLc1
 2019-07-03,57.4,refinitiv:CLc1
-2019-07-04,57.509998,yahoo:CL=F
+2019-07-04,57.509998,refinitiv:CLc1
 2019-07-05,57.73,refinitiv:CLc1
 2019-07-08,57.57,refinitiv:CLc1
 2019-07-09,58.34,refinitiv:CLc1
@@ -1188,7 +1188,7 @@ date,value,source
 2019-08-28,55.9,refinitiv:CLc1
 2019-08-29,56.61,refinitiv:CLc1
 2019-08-30,55.16,refinitiv:CLc1
-2019-09-02,53.939999,yahoo:CL=F
+2019-09-02,53.939999,refinitiv:CLc1
 2019-09-03,53.93,refinitiv:CLc1
 2019-09-04,55.98,refinitiv:CLc1
 2019-09-05,56.17,refinitiv:CLc1
@@ -1372,7 +1372,7 @@ date,value,source
 2020-05-20,33.52,refinitiv:CLc1
 2020-05-21,33.91,refinitiv:CLc1
 2020-05-22,33.56,refinitiv:CLc1
-2020-05-25,34.349998,yahoo:CL=F
+2020-05-25,34.349998,refinitiv:CLc1
 2020-05-26,34.17,refinitiv:CLc1
 2020-05-27,32.22,refinitiv:CLc1
 2020-05-28,33.66,refinitiv:CLc1
@@ -1446,7 +1446,7 @@ date,value,source
 2020-09-02,41.58,refinitiv:CLc1
 2020-09-03,41.28,refinitiv:CLc1
 2020-09-04,39.51,refinitiv:CLc1
-2020-09-07,36.759998,yahoo:CL=F
+2020-09-07,36.759998,refinitiv:CLc1
 2020-09-08,36.84,refinitiv:CLc1
 2020-09-09,37.78,refinitiv:CLc1
 2020-09-10,37,refinitiv:CLc1
@@ -1630,7 +1630,7 @@ date,value,source
 2021-05-26,66.16,refinitiv:CLc1
 2021-05-27,66.86,refinitiv:CLc1
 2021-05-28,66.63,refinitiv:CLc1
-2021-05-31,67.720001,yahoo:CL=F
+2021-05-31,67.720001,refinitiv:CLc1
 2021-06-01,67.99,refinitiv:CLc1
 2021-06-02,68.75,refinitiv:CLc1
 2021-06-03,68.93,refinitiv:CLc1
@@ -1655,7 +1655,7 @@ date,value,source
 2021-06-30,73.46,refinitiv:CLc1
 2021-07-01,74.96,refinitiv:CLc1
 2021-07-02,75.19,refinitiv:CLc1
-2021-07-05,73.370003,yahoo:CL=F
+2021-07-05,73.370003,refinitiv:CLc1
 2021-07-06,73.81,refinitiv:CLc1
 2021-07-07,72.13,refinitiv:CLc1
 2021-07-08,73.23,refinitiv:CLc1
@@ -1700,7 +1700,7 @@ date,value,source
 2021-09-01,68.22,refinitiv:CLc1
 2021-09-02,69.79,refinitiv:CLc1
 2021-09-03,69.1,refinitiv:CLc1
-2021-09-06,68.349998,yahoo:CL=F
+2021-09-06,68.349998,refinitiv:CLc1
 2021-09-07,68.38,refinitiv:CLc1
 2021-09-08,69.39,refinitiv:CLc1
 2021-09-09,67.92,refinitiv:CLc1
@@ -1885,7 +1885,7 @@ date,value,source
 2022-05-25,110.74,refinitiv:CLc1
 2022-05-26,114.26,refinitiv:CLc1
 2022-05-27,115.07,refinitiv:CLc1
-2022-05-30,114.67,yahoo:CL=F
+2022-05-30,114.67,refinitiv:CLc1
 2022-05-31,115.26,refinitiv:CLc1
 2022-06-01,114.79,refinitiv:CLc1
 2022-06-02,117.55,refinitiv:CLc1
@@ -1900,7 +1900,7 @@ date,value,source
 2022-06-15,115.83,refinitiv:CLc1
 2022-06-16,117.06,refinitiv:CLc1
 2022-06-17,110.48,refinitiv:CLc1
-2022-06-20,110.65,yahoo:CL=F
+2022-06-20,110.65,refinitiv:CLc1
 2022-06-21,110.58,refinitiv:CLc1
 2022-06-22,104.3,refinitiv:CLc1
 2022-06-23,104.03,refinitiv:CLc1
@@ -1910,7 +1910,7 @@ date,value,source
 2022-06-29,109.63,refinitiv:CLc1
 2022-06-30,106.01,refinitiv:CLc1
 2022-07-01,108.46,refinitiv:CLc1
-2022-07-04,99.5,yahoo:CL=F
+2022-07-04,99.5,refinitiv:CLc1
 2022-07-05,99.55,refinitiv:CLc1
 2022-07-06,98.13,refinitiv:CLc1
 2022-07-07,102.16,refinitiv:CLc1
@@ -1955,7 +1955,7 @@ date,value,source
 2022-08-31,88.85,refinitiv:CLc1
 2022-09-01,86.37,refinitiv:CLc1
 2022-09-02,87.25,refinitiv:CLc1
-2022-09-05,86.879997,yahoo:CL=F
+2022-09-05,86.879997,refinitiv:CLc1
 2022-09-06,86.96,refinitiv:CLc1
 2022-09-07,81.66,refinitiv:CLc1
 2022-09-08,82.73,refinitiv:CLc1
@@ -2139,7 +2139,7 @@ date,value,source
 2023-05-24,74.22,refinitiv:CLc1
 2023-05-25,71.81,refinitiv:CLc1
 2023-05-26,72.87,refinitiv:CLc1
-2023-05-29,69.459999,yahoo:CL=F
+2023-05-29,69.459999,refinitiv:CLc1
 2023-05-30,69.54,refinitiv:CLc1
 2023-05-31,67.57,refinitiv:CLc1
 2023-06-01,70.15,refinitiv:CLc1
@@ -2154,7 +2154,7 @@ date,value,source
 2023-06-14,68.68,refinitiv:CLc1
 2023-06-15,70.57,refinitiv:CLc1
 2023-06-16,71.44,refinitiv:CLc1
-2023-06-19,70.5,yahoo:CL=F
+2023-06-19,70.5,refinitiv:CLc1
 2023-06-20,70.94,refinitiv:CLc1
 2023-06-21,72.37,refinitiv:CLc1
 2023-06-22,69.53,refinitiv:CLc1
@@ -2165,7 +2165,7 @@ date,value,source
 2023-06-29,69.78,refinitiv:CLc1
 2023-06-30,70.45,refinitiv:CLc1
 2023-07-03,70.12,refinitiv:CLc1
-2023-07-04,71.790001,yahoo:CL=F
+2023-07-04,71.790001,refinitiv:CLc1
 2023-07-05,71.83,refinitiv:CLc1
 2023-07-06,71.91,refinitiv:CLc1
 2023-07-07,73.67,refinitiv:CLc1
@@ -2209,7 +2209,7 @@ date,value,source
 2023-08-30,81.71,refinitiv:CLc1
 2023-08-31,83.58,refinitiv:CLc1
 2023-09-01,86.05,refinitiv:CLc1
-2023-09-04,86.690002,yahoo:CL=F
+2023-09-04,86.690002,refinitiv:CLc1
 2023-09-05,86.74,refinitiv:CLc1
 2023-09-06,87.58,refinitiv:CLc1
 2023-09-07,86.77,refinitiv:CLc1
@@ -2393,7 +2393,7 @@ date,value,source
 2024-05-22,77.25,refinitiv:CLc1
 2024-05-23,76.98,refinitiv:CLc1
 2024-05-24,77.8,refinitiv:CLc1
-2024-05-27,79.830002,yahoo:CL=F
+2024-05-27,79.830002,refinitiv:CLc1
 2024-05-28,80.28,refinitiv:CLc1
 2024-05-29,79.28,refinitiv:CLc1
 2024-05-30,77.87,refinitiv:CLc1
@@ -2410,7 +2410,7 @@ date,value,source
 2024-06-14,78.49,refinitiv:CLc1
 2024-06-17,80.62,refinitiv:CLc1
 2024-06-18,81.55,refinitiv:CLc1
-2024-06-19,82.169998,yahoo:CL=F
+2024-06-19,82.169998,refinitiv:CLc1
 2024-06-20,82.34,refinitiv:CLc1
 2024-06-21,80.59,refinitiv:CLc1
 2024-06-24,81.75,refinitiv:CLc1
@@ -2421,7 +2421,7 @@ date,value,source
 2024-07-01,83.38,refinitiv:CLc1
 2024-07-02,83.17,refinitiv:CLc1
 2024-07-03,83.6,refinitiv:CLc1
-2024-07-04,83.160004,yahoo:CL=F
+2024-07-04,83.160004,refinitiv:CLc1
 2024-07-05,83.44,refinitiv:CLc1
 2024-07-08,82.22,refinitiv:CLc1
 2024-07-09,81.81,refinitiv:CLc1
@@ -2463,7 +2463,7 @@ date,value,source
 2024-08-28,74.38,refinitiv:CLc1
 2024-08-29,76.02,refinitiv:CLc1
 2024-08-30,73.65,refinitiv:CLc1
-2024-09-02,70.339996,yahoo:CL=F
+2024-09-02,70.339996,refinitiv:CLc1
 2024-09-03,70.22,refinitiv:CLc1
 2024-09-04,69.25,refinitiv:CLc1
 2024-09-05,69.32,refinitiv:CLc1
@@ -2647,7 +2647,7 @@ date,value,source
 2025-05-21,61.34,refinitiv:CLc1
 2025-05-22,60.81,refinitiv:CLc1
 2025-05-23,61.76,refinitiv:CLc1
-2025-05-26,60.889999,yahoo:CL=F
+2025-05-26,60.889999,refinitiv:CLc1
 2025-05-27,61.07,refinitiv:CLc1
 2025-05-28,61.86,refinitiv:CLc1
 2025-05-29,60.92,refinitiv:CLc1
@@ -2665,7 +2665,7 @@ date,value,source
 2025-06-16,71.48,refinitiv:CLc1
 2025-06-17,75.49,refinitiv:CLc1
 2025-06-18,74.87,refinitiv:CLc1
-2025-06-19,74.93,yahoo:CL=F
+2025-06-19,74.93,refinitiv:CLc1
 2025-06-20,75,refinitiv:CLc1
 2025-06-23,67.23,refinitiv:CLc1
 2025-06-24,65.01,refinitiv:CLc1
@@ -2676,7 +2676,7 @@ date,value,source
 2025-07-01,65.53,refinitiv:CLc1
 2025-07-02,67.53,refinitiv:CLc1
 2025-07-03,67.18,refinitiv:CLc1
-2025-07-04,66.5,yahoo:CL=F
+2025-07-04,66.5,refinitiv:CLc1
 2025-07-07,67.92,refinitiv:CLc1
 2025-07-08,68.18,refinitiv:CLc1
 2025-07-09,68.29,refinitiv:CLc1
@@ -2717,7 +2717,7 @@ date,value,source
 2025-08-27,63.86,refinitiv:CLc1
 2025-08-28,64.32,refinitiv:CLc1
 2025-08-29,64.01,refinitiv:CLc1
-2025-09-01,65.589996,yahoo:CL=F
+2025-09-01,65.589996,refinitiv:CLc1
 2025-09-02,65.62,refinitiv:CLc1
 2025-09-03,63.77,refinitiv:CLc1
 2025-09-04,63.34,refinitiv:CLc1
@@ -2902,7 +2902,7 @@ date,value,source
 2026-05-20,99.08,refinitiv:CLc1
 2026-05-21,98,refinitiv:CLc1
 2026-05-22,97,refinitiv:CLc1
-2026-05-25,93.889999,yahoo:CL=F
+2026-05-25,93.889999,refinitiv:CLc1
 2026-05-26,93.57,refinitiv:CLc1
 2026-05-27,89.41,refinitiv:CLc1
 2026-05-28,88.53,refinitiv:CLc1
@@ -2975,7 +2975,7 @@ date,value,source
 2026-09-02,90.63,refinitiv:CLc1
 2026-09-03,91.67,refinitiv:CLc1
 2026-09-04,91.22,refinitiv:CLc1
-2026-09-07,93.029999,yahoo:CL=F
+2026-09-07,93.029999,refinitiv:CLc1
 2026-09-08,94.25,refinitiv:CLc1
 2026-09-09,96.67,refinitiv:CLc1
 2026-09-10,103.93,refinitiv:CLc1
@@ -3016,3 +3016,4 @@ date,value,source
 2026-10-29,102.86,refinitiv:CLc1
 2026-10-30,102.95,refinitiv:CLc1
 2026-11-02,96.26,refinitiv:CLc1
+2026-11-03,96.76,refinitiv:CLc1
