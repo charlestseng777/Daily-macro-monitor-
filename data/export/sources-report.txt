@@ -1,157 +1,157 @@
 FAIL  US1Y         refinitiv:US1YT=RR                                 Refinitiv not configured
-OK    US1Y         treasury:1 Yr                                       2971 rows, last 2026-11-18 = 4.6200
-OK    US1Y         fred:DGS1                                       2970 rows, last 2026-11-17 = 4.6000
+OK    US1Y         treasury:1 Yr                                       2972 rows, last 2026-11-19 = 4.6200
+OK    US1Y         fred:DGS1                                       2971 rows, last 2026-11-18 = 4.6200
 FAIL  US2Y         refinitiv:US2YT=RR                                 Refinitiv not configured
-OK    US2Y         treasury:2 Yr                                       2971 rows, last 2026-11-18 = 4.8000
-OK    US2Y         fred:DGS2                                       2970 rows, last 2026-11-17 = 4.8000
+OK    US2Y         treasury:2 Yr                                       2972 rows, last 2026-11-19 = 4.7600
+OK    US2Y         fred:DGS2                                       2971 rows, last 2026-11-18 = 4.8000
 FAIL  US2Y         stooq:2usy.b                                   Stooq 2usy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  US5Y         refinitiv:US5YT=RR                                 Refinitiv not configured
-OK    US5Y         treasury:5 Yr                                       2971 rows, last 2026-11-18 = 4.8900
-OK    US5Y         fred:DGS5                                       2970 rows, last 2026-11-17 = 4.9000
+OK    US5Y         treasury:5 Yr                                       2972 rows, last 2026-11-19 = 4.8600
+OK    US5Y         fred:DGS5                                       2971 rows, last 2026-11-18 = 4.8900
 FAIL  US5Y         stooq:5usy.b                                   Stooq 5usy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  US10Y        refinitiv:US10YT=RR                                Refinitiv not configured
-OK    US10Y        treasury:10 Yr                                      2971 rows, last 2026-11-18 = 5.0700
-OK    US10Y        fred:DGS10                                      2970 rows, last 2026-11-17 = 5.1000
+OK    US10Y        treasury:10 Yr                                      2972 rows, last 2026-11-19 = 5.0400
+OK    US10Y        fred:DGS10                                      2971 rows, last 2026-11-18 = 5.0700
 FAIL  US10Y        stooq:10usy.b                                  Stooq 10usy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  US30Y        refinitiv:US30YT=RR                                Refinitiv not configured
-OK    US30Y        treasury:30 Yr                                      2971 rows, last 2026-11-18 = 5.4100
-OK    US30Y        fred:DGS30                                      2970 rows, last 2026-11-17 = 5.4600
+OK    US30Y        treasury:30 Yr                                      2972 rows, last 2026-11-19 = 5.4000
+OK    US30Y        fred:DGS30                                      2971 rows, last 2026-11-18 = 5.4100
 FAIL  US30Y        stooq:30usy.b                                  Stooq 30usy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  UK2Y         refinitiv:GB2YT=RR                                 Refinitiv not configured
-OK    UK2Y         boe_curve:nominal:2                                  3002 rows, last 2026-11-17 = 4.7857
-OK    UK2Y         cnbc:GB2Y-GB                                     515 rows, last 2026-11-18 = 4.9193
+OK    UK2Y         boe_curve:nominal:2                                  3003 rows, last 2026-11-18 = 4.7137
+OK    UK2Y         cnbc:GB2Y-GB                                     514 rows, last 2026-11-19 = 4.9598
 FAIL  UK2Y         stooq:2uky.b                                   Stooq 2uky.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  UK5Y         refinitiv:GB5YT=RR                                 Refinitiv not configured
-OK    UK5Y         boe_curve:nominal:5                                  3002 rows, last 2026-11-17 = 5.0093
-OK    UK5Y         boe:IUDSNPY                                    3001 rows, last 2026-11-16 = 4.9734
+OK    UK5Y         boe_curve:nominal:5                                  3003 rows, last 2026-11-18 = 4.9238
+OK    UK5Y         boe:IUDSNPY                                    3002 rows, last 2026-11-17 = 5.0000
 FAIL  UK5Y         stooq:5uky.b                                   Stooq 5uky.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  UK10Y        refinitiv:GB10YT=RR                                Refinitiv not configured
-OK    UK10Y        boe_curve:nominal:10                                 3002 rows, last 2026-11-17 = 5.3747
-OK    UK10Y        boe:IUDMNPY                                    3001 rows, last 2026-11-16 = 5.3151
+OK    UK10Y        boe_curve:nominal:10                                 3003 rows, last 2026-11-18 = 5.2894
+OK    UK10Y        boe:IUDMNPY                                    3002 rows, last 2026-11-17 = 5.3520
 FAIL  UK10Y        stooq:10uky.b                                  Stooq 10uky.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  UK30Y        refinitiv:GB30YT=RR                                Refinitiv not configured
-OK    UK30Y        boe_curve:nominal:30                                 2749 rows, last 2026-11-17 = 5.8530
-OK    UK30Y        cnbc:GB30Y-GB                                    518 rows, last 2026-11-18 = 5.7416
+OK    UK30Y        boe_curve:nominal:30                                 2750 rows, last 2026-11-18 = 5.7714
+OK    UK30Y        cnbc:GB30Y-GB                                    519 rows, last 2026-11-19 = 5.7689
 FAIL  UK30Y        stooq:30uky.b                                  Stooq 30uky.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE2Y         refinitiv:DE2YT=RR                                 Refinitiv not configured
-OK    DE2Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A   3016 rows, last 2026-11-18 = 3.1200
-OK    DE2Y         cnbc:DE2Y-DE                                     519 rows, last 2026-11-18 = 3.1260
+OK    DE2Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R02XX.R.A.A._Z._Z.A   3017 rows, last 2026-11-19 = 3.1400
+OK    DE2Y         cnbc:DE2Y-DE                                     518 rows, last 2026-11-19 = 3.1642
 FAIL  DE2Y         stooq:2dey.b                                   Stooq 2dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE5Y         refinitiv:DE5YT=RR                                 Refinitiv not configured
-OK    DE5Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A   3016 rows, last 2026-11-18 = 3.1800
-OK    DE5Y         cnbc:DE5Y-DE                                     519 rows, last 2026-11-18 = 3.1920
+OK    DE5Y         bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R05XX.R.A.A._Z._Z.A   3017 rows, last 2026-11-19 = 3.1900
+OK    DE5Y         cnbc:DE5Y-DE                                     520 rows, last 2026-11-19 = 3.2313
 FAIL  DE5Y         stooq:5dey.b                                   Stooq 5dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE10Y        refinitiv:DE10YT=RR                                Refinitiv not configured
-OK    DE10Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A   3016 rows, last 2026-11-18 = 3.4300
-OK    DE10Y        cnbc:DE10Y-DE                                    520 rows, last 2026-11-18 = 3.3770
+OK    DE10Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R10XX.R.A.A._Z._Z.A   3017 rows, last 2026-11-19 = 3.4500
+OK    DE10Y        cnbc:DE10Y-DE                                    519 rows, last 2026-11-19 = 3.4099
 FAIL  DE10Y        stooq:10dey.b                                  Stooq 10dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  DE30Y        refinitiv:DE30YT=RR                                Refinitiv not configured
-OK    DE30Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R30XX.R.A.A._Z._Z.A   3016 rows, last 2026-11-18 = 3.8200
-OK    DE30Y        cnbc:DE30Y-DE                                    521 rows, last 2026-11-18 = 3.7454
+OK    DE30Y        bundesbank:BBSIS/D.I.ZST.ZI.EUR.S1311.B.A604.R30XX.R.A.A._Z._Z.A   3017 rows, last 2026-11-19 = 3.8300
+OK    DE30Y        cnbc:DE30Y-DE                                    520 rows, last 2026-11-19 = 3.7706
 FAIL  DE30Y        stooq:30dey.b                                  Stooq 30dey.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP2Y         refinitiv:JP2YT=RR                                 Refinitiv not configured
-OK    JP2Y         mof:2Y                                         2901 rows, last 2026-11-18 = 1.8720
-OK    JP2Y         cnbc:JP2Y-JP                                     496 rows, last 2026-11-18 = 1.8670
+OK    JP2Y         mof:2Y                                         2902 rows, last 2026-11-19 = 1.8530
+OK    JP2Y         cnbc:JP2Y-JP                                     494 rows, last 2026-11-19 = 1.8540
 FAIL  JP2Y         stooq:2jpy.b                                   Stooq 2jpy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP10Y        refinitiv:JP10YT=RR                                Refinitiv not configured
-OK    JP10Y        mof:10Y                                        2901 rows, last 2026-11-18 = 2.9160
-OK    JP10Y        cnbc:JP10Y-JP                                    493 rows, last 2026-11-18 = 2.8760
+OK    JP10Y        mof:10Y                                        2902 rows, last 2026-11-19 = 2.8700
+OK    JP10Y        cnbc:JP10Y-JP                                    495 rows, last 2026-11-19 = 2.8260
 FAIL  JP10Y        stooq:10jpy.b                                  Stooq 10jpy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP30Y        refinitiv:JP30YT=RR                                Refinitiv not configured
-OK    JP30Y        mof:30Y                                        2901 rows, last 2026-11-18 = 4.0820
-OK    JP30Y        cnbc:JP30Y-JP                                    496 rows, last 2026-11-18 = 4.0510
+OK    JP30Y        mof:30Y                                        2902 rows, last 2026-11-19 = 4.0300
+OK    JP30Y        cnbc:JP30Y-JP                                    491 rows, last 2026-11-19 = 3.9960
 FAIL  JP30Y        stooq:30jpy.b                                  Stooq 30jpy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  JP1Y         refinitiv:JP1YT=RR                                 Refinitiv not configured
-OK    JP1Y         mof:1Y                                         2901 rows, last 2026-11-18 = 1.6720
+OK    JP1Y         mof:1Y                                         2902 rows, last 2026-11-19 = 1.6590
 FAIL  FR10Y        refinitiv:FR10YT=RR                                Refinitiv not configured
-OK    FR10Y        cnbc:FR10Y-FR                                    519 rows, last 2026-11-18 = 4.8740
+OK    FR10Y        cnbc:FR10Y-FR                                    519 rows, last 2026-11-19 = 4.9412
 FAIL  FR10Y        stooq:10fry.b                                  Stooq 10fry.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  IT10Y        refinitiv:IT10YT=RR                                Refinitiv not configured
-OK    IT10Y        cnbc:IT10Y-IT                                    519 rows, last 2026-11-18 = 4.4526
+OK    IT10Y        cnbc:IT10Y-IT                                    520 rows, last 2026-11-19 = 4.4840
 FAIL  IT10Y        stooq:10ity.b                                  Stooq 10ity.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  ES10Y        refinitiv:ES10YT=RR                                Refinitiv not configured
-OK    ES10Y        cnbc:ES10Y-ES                                    520 rows, last 2026-11-18 = 3.9554
+OK    ES10Y        cnbc:ES10Y-ES                                    520 rows, last 2026-11-19 = 3.9905
 FAIL  ES10Y        stooq:10esy.b                                  Stooq 10esy.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  CN10Y        refinitiv:CN10YT=RR                                Refinitiv not configured
-OK    CN10Y        cnbc:CN10Y-CN                                    485 rows, last 2026-11-18 = 1.6430
+OK    CN10Y        cnbc:CN10Y-CN                                    485 rows, last 2026-11-19 = 1.6360
 FAIL  CN10Y        stooq:10cny.b                                  Stooq 10cny.b: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
-OK    US3M         treasury:3 Mo                                       2971 rows, last 2026-11-18 = 4.3400
-OK    US3M         fred:DGS3MO                                     2970 rows, last 2026-11-17 = 4.3300
-OK    US6M         treasury:6 Mo                                       2971 rows, last 2026-11-18 = 4.4300
-OK    US6M         fred:DGS6MO                                     2970 rows, last 2026-11-17 = 4.4100
-OK    EA_AAA_3M    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_3M         3031 rows, last 2026-11-17 = 2.6497
-OK    EA_AAA_6M    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_6M         3031 rows, last 2026-11-17 = 2.8000
-OK    EA_AAA_1Y    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_1Y         3031 rows, last 2026-11-17 = 2.9776
-OK    EA_AAA_2Y    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y         3031 rows, last 2026-11-17 = 3.0926
-OK    US5YBE       fred:T5YIE                                      2971 rows, last 2026-11-18 = 2.2300
-OK    US10YBE      fred:T10YIE                                     2971 rows, last 2026-11-18 = 2.1900
-OK    US10YREAL    fred:DFII10                                     2970 rows, last 2026-11-17 = 2.8900
-OK    UK10YBE      boe_curve:inflation:10                               3002 rows, last 2026-11-17 = 3.1744
+OK    US3M         treasury:3 Mo                                       2972 rows, last 2026-11-19 = 4.3400
+OK    US3M         fred:DGS3MO                                     2971 rows, last 2026-11-18 = 4.3400
+OK    US6M         treasury:6 Mo                                       2972 rows, last 2026-11-19 = 4.4200
+OK    US6M         fred:DGS6MO                                     2971 rows, last 2026-11-18 = 4.4300
+OK    EA_AAA_3M    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_3M         3032 rows, last 2026-11-18 = 2.6566
+OK    EA_AAA_6M    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_6M         3032 rows, last 2026-11-18 = 2.8021
+OK    EA_AAA_1Y    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_1Y         3032 rows, last 2026-11-18 = 2.9743
+OK    EA_AAA_2Y    ecb:YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y         3032 rows, last 2026-11-18 = 3.0859
+OK    US5YBE       fred:T5YIE                                      2972 rows, last 2026-11-19 = 2.2200
+OK    US10YBE      fred:T10YIE                                     2972 rows, last 2026-11-19 = 2.1600
+OK    US10YREAL    fred:DFII10                                     2971 rows, last 2026-11-18 = 2.8800
+OK    UK10YBE      boe_curve:inflation:10                               3003 rows, last 2026-11-18 = 3.1652
 FAIL  UK10YBE      refinitiv:GBBEI10Y=RR                              Refinitiv not configured
 FAIL  DE10YBE      refinitiv:DEBEI10Y=RR                              Refinitiv not configured
 FAIL  JP10YBE      refinitiv:JPYCPI10Y=                               Refinitiv not configured
-OK    FED_UPPER    fred:DFEDTARU                                   3100 rows, last 2026-11-18 = 4.0000
-OK    SOFR         fred:SOFR                                       2154 rows, last 2026-11-17 = 3.9200
-OK    EFFR         fred:EFFR                                       2983 rows, last 2026-11-17 = 3.8800
-OK    BANK_RATE    boe:IUDBEDR                                    3002 rows, last 2026-11-17 = 4.0000
-OK    SONIA        boe:IUDSOIA                                    3001 rows, last 2026-11-16 = 3.9833
-OK    ECB_DFR      ecb:FM/D.U2.EUR.4F.KR.DFR.LEV                  3101 rows, last 2026-11-19 = 2.5000
-OK    ESTR         ecb:EST/B.EU000A2X2A25.WT                      1827 rows, last 2026-11-17 = 2.4410
+OK    FED_UPPER    fred:DFEDTARU                                   3101 rows, last 2026-11-19 = 4.0000
+OK    SOFR         fred:SOFR                                       2155 rows, last 2026-11-18 = 3.9000
+OK    EFFR         fred:EFFR                                       2984 rows, last 2026-11-18 = 3.8800
+OK    BANK_RATE    boe:IUDBEDR                                    3003 rows, last 2026-11-18 = 4.0000
+OK    SONIA        boe:IUDSOIA                                    3002 rows, last 2026-11-17 = 3.9840
+OK    ECB_DFR      ecb:FM/D.U2.EUR.4F.KR.DFR.LEV                  3102 rows, last 2026-11-20 = 2.5000
+OK    ESTR         ecb:EST/B.EU000A2X2A25.WT                      1828 rows, last 2026-11-18 = 2.4420
 FAIL  BOJ_RATE     refinitiv:JPONMU=RR                                Refinitiv not configured
 OK    BOJ_RATE     fred:IRSTCI01JPM156N                             102 rows, last 2026-10-01 = 1.2270
 FAIL  DXY          refinitiv:.DXY                                     Refinitiv not configured
-OK    DXY          yahoo:DX-Y.NYB                                   2613 rows, last 2026-11-19 = 103.9010
+OK    DXY          yahoo:DX-Y.NYB                                   2614 rows, last 2026-11-20 = 103.7860
 FAIL  DXY          stooq:dx.f                                     Stooq dx.f: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  EURUSD       refinitiv:EUR=                                     Refinitiv not configured
-OK    EURUSD       yahoo:EURUSD=X                                   2728 rows, last 2026-11-19 = 1.0966
-OK    EURUSD       ecb:EXR/D.USD.EUR.SP00.A                       3042 rows, last 2026-11-18 = 1.0968
+OK    EURUSD       yahoo:EURUSD=X                                   2729 rows, last 2026-11-20 = 1.0981
+OK    EURUSD       ecb:EXR/D.USD.EUR.SP00.A                       3043 rows, last 2026-11-19 = 1.0992
 FAIL  EURUSD       stooq:eurusd                                   Stooq eurusd: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  GBPUSD       refinitiv:GBP=                                     Refinitiv not configured
-OK    GBPUSD       yahoo:GBPUSD=X                                   2728 rows, last 2026-11-19 = 1.3134
+OK    GBPUSD       yahoo:GBPUSD=X                                   2729 rows, last 2026-11-20 = 1.3105
 FAIL  GBPUSD       stooq:gbpusd                                   Stooq gbpusd: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  USDJPY       refinitiv:JPY=                                     Refinitiv not configured
-OK    USDJPY       yahoo:JPY=X                                      2728 rows, last 2026-11-19 = 159.5450
+OK    USDJPY       yahoo:JPY=X                                      2729 rows, last 2026-11-20 = 159.1250
 FAIL  USDJPY       stooq:usdjpy                                   Stooq usdjpy: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  USDCNY       refinitiv:CNY=                                     Refinitiv not configured
-OK    USDCNY       yahoo:CNY=X                                      2727 rows, last 2026-11-19 = 6.6655
+OK    USDCNY       yahoo:CNY=X                                      2728 rows, last 2026-11-20 = 6.6718
 FAIL  USDCNY       stooq:usdcny                                   Stooq usdcny: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  SPX          refinitiv:.SPX                                     Refinitiv not configured
-OK    SPX          yahoo:^GSPC                                      2988 rows, last 2026-11-18 = 7323.6299
+OK    SPX          yahoo:^GSPC                                      2989 rows, last 2026-11-19 = 7175.8301
 FAIL  SPX          stooq:^spx                                     Stooq ^spx: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 OK    SPX          fred:SP500                                      2512 rows, last 2026-11-18 = 7323.6300
 FAIL  FTSE         refinitiv:.FTSE                                    Refinitiv not configured
-OK    FTSE         yahoo:^FTSE                                      3002 rows, last 2026-11-18 = 10551.2002
+OK    FTSE         yahoo:^FTSE                                      3003 rows, last 2026-11-19 = 10452.7002
 FAIL  FTSE         stooq:^ukx                                     Stooq ^ukx: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  SX5E         refinitiv:.STOXX50E                                Refinitiv not configured
-OK    SX5E         yahoo:^STOXX50E                                  2986 rows, last 2026-11-18 = 6154.3901
+OK    SX5E         yahoo:^STOXX50E                                  2987 rows, last 2026-11-19 = 6113.8599
 FAIL  SX5E         stooq:^stx                                     Stooq ^stx: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  NKY          refinitiv:.N225                                    Refinitiv not configured
-OK    NKY          yahoo:^N225                                      2902 rows, last 2026-11-19 = 59245.0117
+OK    NKY          yahoo:^N225                                      2903 rows, last 2026-11-20 = 56527.6211
 FAIL  NKY          stooq:^nkx                                     Stooq ^nkx: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
-OK    NKY          fred:NIKKEI225                                  2901 rows, last 2026-11-18 = 59024.2800
+OK    NKY          fred:NIKKEI225                                  2902 rows, last 2026-11-19 = 59444.2100
 FAIL  CSI300       refinitiv:.CSI300                                  Refinitiv not configured
-OK    CSI300       yahoo:000300.SS                                     1 rows, last 2026-11-19 = 3973.5015
-OK    CSI300       cnbc:.CSI300                                     485 rows, last 2026-11-18 = 3983.7667
-OK    VIX          yahoo:^VIX                                       2990 rows, last 2026-11-18 = 24.5600
-OK    VIX          fred:VIXCLS                                     3020 rows, last 2026-11-17 = 25.4600
+OK    CSI300       yahoo:000300.SS                                     1 rows, last 2026-11-20 = 3907.6074
+OK    CSI300       cnbc:.CSI300                                     485 rows, last 2026-11-19 = 3984.8399
+OK    VIX          yahoo:^VIX                                       2991 rows, last 2026-11-19 = 28.4400
+OK    VIX          fred:VIXCLS                                     3021 rows, last 2026-11-18 = 24.5600
 FAIL  BRENT        refinitiv:LCOc1                                    Refinitiv not configured
-OK    BRENT        yahoo:BZ=F                                       2613 rows, last 2026-11-19 = 89.3200
+OK    BRENT        yahoo:BZ=F                                       2614 rows, last 2026-11-20 = 89.8700
 FAIL  BRENT        eia:PET.RBRTE.D                              EIA_API_KEY not set
 OK    BRENT        fred:DCOILBRENTEU                               3016 rows, last 2026-11-17 = 92.9400
 FAIL  WTI          refinitiv:CLc1                                     Refinitiv not configured
-OK    WTI          yahoo:CL=F                                       2612 rows, last 2026-11-19 = 82.2000
+OK    WTI          yahoo:CL=F                                       2613 rows, last 2026-11-20 = 82.8100
 FAIL  WTI          eia:PET.RWTC.D                               EIA_API_KEY not set
 OK    WTI          fred:DCOILWTICO                                 2966 rows, last 2026-11-17 = 89.5300
 FAIL  GOLD         refinitiv:XAU=                                     Refinitiv not configured
-OK    GOLD         yahoo:GC=F                                       2612 rows, last 2026-11-19 = 3729.5000
+OK    GOLD         yahoo:GC=F                                       2613 rows, last 2026-11-20 = 3521.1001
 FAIL  GOLD         stooq:xauusd                                   Stooq xauusd: <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="robots" content="no
 FAIL  COPPER       refinitiv:HGc1                                     Refinitiv not configured
-OK    COPPER       yahoo:HG=F                                       2612 rows, last 2026-11-19 = 5.6770
+OK    COPPER       yahoo:HG=F                                       2613 rows, last 2026-11-20 = 5.4745
 FAIL  TTF          refinitiv:TRNLTTFMc1                               Refinitiv not configured
-OK    TTF          yahoo:TTF=F                                      1998 rows, last 2026-11-18 = 80.8480
-OK    US_IG_OAS    fred:BAMLC0A0CM                                  773 rows, last 2026-11-17 = 0.9200
-OK    US_HY_OAS    fred:BAMLH0A0HYM2                                774 rows, last 2026-11-17 = 3.4300
-OK    EU_HY_OAS    fred:BAMLHE00EHYIOAS                             774 rows, last 2026-11-17 = 3.3700
-OK    UK_CREDIT    yahoo:SLXX.L                                     3001 rows, last 2026-11-17 = 117.3500
+OK    TTF          yahoo:TTF=F                                      1999 rows, last 2026-11-19 = 84.4560
+OK    US_IG_OAS    fred:BAMLC0A0CM                                  774 rows, last 2026-11-18 = 0.9300
+OK    US_HY_OAS    fred:BAMLH0A0HYM2                                775 rows, last 2026-11-18 = 3.4700
+OK    EU_HY_OAS    fred:BAMLHE00EHYIOAS                             775 rows, last 2026-11-18 = 3.3900
+OK    UK_CREDIT    yahoo:SLXX.L                                     3002 rows, last 2026-11-18 = 118.0100
 FAIL  JP_CREDIT    refinitiv:ITRAXX-JAPAN=                            Refinitiv not configured
 FAIL  CN_CREDIT    refinitiv:ITRAXX-ASIAXJ=                           Refinitiv not configured
